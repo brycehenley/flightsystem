@@ -1,0 +1,76 @@
+<Maratis version="3.0">
+
+<Level>
+
+	<properties currentScene="0" />
+
+	<Scene name="Scene-1">
+
+		<script file="../scripts/titlescreen.lua" />
+		<properties 
+			data="Static"
+			gravity="0.000000 0.000000 -0.981000" />
+
+		<Camera name="Camera0">
+			<active value="true" />
+			<transform 
+				position="0.000000 0.000000 70.000000"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				clearColor="0.200000 0.300000 0.400000"
+				ortho="false"
+				fov="60.000000"
+				clippingNear="1.000000"
+				clippingFar="1000.000000"
+				fog="false"
+				fogDistance="0.000000" />
+		</Camera>
+		<Text name="Text0" file="../fonts/chintzy.ttf">
+			<active value="true" />
+			<transform 
+				position="-38.393772 19.289658 -0.998169"
+				rotation="180.000000 0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				size="16.000000"
+				align="Left"
+				color="1.000000 1.000000 1.000000 1.000000" />
+			<textData>
+				<![CDATA[Text]]>
+			</textData>
+		</Text>
+		<Text name="Text1" file="../fonts/chintzy.ttf">
+			<active value="true" />
+			<transform 
+				position="-60.365891 -3.029236 -0.998169"
+				rotation="180.000000 0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				size="5.000000"
+				align="Left"
+				color="1.000000 1.000000 1.000000 1.000000" />
+			<textData>
+				<![CDATA[Text]]>
+			</textData>
+		</Text>
+		<Text name="Text2" file="../fonts/chintzy.ttf">
+			<active value="true" />
+			<transform 
+				position="-60.365891 -11.145561 -0.998169"
+				rotation="180.000000 0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				size="5.000000"
+				align="Left"
+				color="1.000000 1.000000 1.000000 1.000000" />
+			<textData>
+				<![CDATA[Text]]>
+			</textData>
+		</Text>
+
+	</Scene>
+
+</Level>
+
+</Maratis>

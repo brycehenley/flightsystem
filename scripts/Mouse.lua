@@ -98,7 +98,7 @@ function handleKeys()
 	if isKeyPressed("S") then
 		addCentralForce(ship, {-0.5, 0.0, 0.0}, "local")
 	end
-	if isKeyPressed("ESCAPE") then
+	if isKeyPressed("BACKSPACE") then
 		menu()
 	end
 	--if isKeyPressed("SPACE") then
@@ -134,16 +134,6 @@ function onSceneUpdate()
 
 
 
-
-
-
- ---------
- --hit detection vars
-	startpos0 = getPosition(hitstart0)
-	endpos0 = getPosition(hitend0)
-
-	startpos1 = getPosition(hitstart1)
-	endpos1 = getPosition(hitend1)
 
 --------
 	-- rotate camera (X mouse)
@@ -209,6 +199,14 @@ function onSceneUpdate()
 		--depricated		--mx = getAxis("MOUSE_X")
 		--depricated		--my = getAxis("MOUSE_Y")
 ---------
+
+ 	--hit detection vars
+	startpos0 = getPosition(hitstart0)
+	endpos0 = getPosition(hitend0)
+
+	startpos1 = getPosition(hitstart1)
+	endpos1 = getPosition(hitend1)
+
 
 	if onKeyDown("MOUSE_BUTTON1") then 
 		endpos0[1] = startpos0[1] + (endpos0[1] - startpos0[1])*1000

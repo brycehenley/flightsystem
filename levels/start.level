@@ -6,7 +6,7 @@
 
 	<Scene name="Scene-1">
 
-		<script file="../scripts/ps3joy.lua" />
+		<script file="../scripts/start.lua" />
 		<properties 
 			data="Static"
 			gravity="0.000000 0.000000 -0.981000" />
@@ -388,7 +388,7 @@
 				angularFactor="1.000000"
 				linearFactor="1.000000 1.000000 1.000000" />
 		</Entity>
-		<Text name="Text" file="../fonts/chintzy.ttf">
+		<Text name="Text" file="../fonts/philosopher/Philosopher-Regular.ttf">
 			<active value="true" />
 			<transform 
 				parent="Camera0"

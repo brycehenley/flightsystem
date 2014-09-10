@@ -1,4 +1,4 @@
-<Maratis version="3.0">
+<Maratis version="3.1">
 
 <Level>
 
@@ -9,7 +9,8 @@
 		<script file="../scripts/titlescreen.lua" />
 		<properties 
 			data="Static"
-			gravity="0.000000 0.000000 -0.981000" />
+			gravity="0.000000 0.000000 -0.981000"
+			ambientLight="0.000000 0.000000 0.000000" />
 
 		<Camera name="Camera0">
 			<active value="true" />
@@ -24,12 +25,13 @@
 				clippingNear="1.000000"
 				clippingFar="1000.000000"
 				fog="false"
-				fogDistance="0.000000" />
+				fogDistance="0.000000"
+				skyboxTextures="" />
 		</Camera>
-		<Text name="Text0" file="../fonts/chintzy.ttf">
+		<Text name="Text0" file="../fonts/arkitech/Arkitech Bold.ttf">
 			<active value="true" />
 			<transform 
-				position="-38.393772 19.289658 -0.998169"
+				position="-56.858780 19.289658 -0.998169"
 				rotation="180.000000 0.000000 0.000000"
 				scale="1.000000 1.000000 1.000000" />
 			<properties 
@@ -40,10 +42,10 @@
 				<![CDATA[Text]]>
 			</textData>
 		</Text>
-		<Text name="Text1" file="../fonts/chintzy.ttf">
+		<Text name="Text1" file="../fonts/philosopher/Philosopher-Bold.ttf">
 			<active value="true" />
 			<transform 
-				position="-60.365891 -3.029236 -0.998169"
+				position="-55.680294 -3.029236 -0.998169"
 				rotation="180.000000 0.000000 0.000000"
 				scale="1.000000 1.000000 1.000000" />
 			<properties 
@@ -54,10 +56,10 @@
 				<![CDATA[Text]]>
 			</textData>
 		</Text>
-		<Text name="Text2" file="../fonts/chintzy.ttf">
+		<Text name="Text2" file="../fonts/philosopher/Philosopher-Bold.ttf">
 			<active value="true" />
 			<transform 
-				position="-60.365891 -11.145561 -0.998169"
+				position="-55.680294 -11.145561 -0.998169"
 				rotation="180.000000 0.000000 0.000000"
 				scale="1.000000 1.000000 1.000000" />
 			<properties 

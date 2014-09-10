@@ -10,7 +10,7 @@ function onSceneUpdate()
 		loadLevel("levels/titlescreen.level")
 	end
 
-	if isKeyPressed("JOY1_BUTTON4") then
+	if isKeyPressed("JOY1_BUTTON_Y") then
 		loadLevel("levels/titlescreen.level")
 	end
 

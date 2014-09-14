@@ -31,7 +31,7 @@
 		<Text name="Text0" file="../fonts/arkitech/Arkitech Bold.ttf">
 			<active value="true" />
 			<transform 
-				position="-56.858780 19.289658 -0.998169"
+				position="-59.204460 19.289658 -0.998169"
 				rotation="180.000000 0.000000 0.000000"
 				scale="1.000000 1.000000 1.000000" />
 			<properties 

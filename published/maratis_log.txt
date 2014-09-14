@@ -1,0 +1,15 @@
+Log tracked at level :6
+[ Info ] Renderer: 3.0 Mesa 10.1.3 in MStandardRenderer in MStandardRenderer.cpp
+[ Info ] No GL4 compatible context found. Falling back to compat shaders. in MStandardRenderer in MStandardRenderer.cpp
+[ Info ] Renderer: 3.0 Mesa 10.1.3 in MStandardRenderer in MStandardRenderer.cpp
+[ Info ] No GL4 compatible context found. Falling back to compat shaders. in MStandardRenderer in MStandardRenderer.cpp
+[ Error ] Load Vorbis : input does not appear to be an ogg vorbis bitstream in M_loadVorbisSound in MVorbisLoader.cpp
+[ Error ] Load Sound : Unsupported RIFF file in M_loadWAVSound in MWAVLoader.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MMeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MMeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MMeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MMeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MMeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MMeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MMeshLoad.cpp
+[ Info ] Update thread returned with exit code 0 in main in main.cpp

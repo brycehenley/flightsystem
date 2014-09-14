@@ -50,6 +50,9 @@ dy = 0.0 -- change in mouse y-axis since last update
 dz = 0.0
 dw = 0.0
 
+sec = 0
+min = 0
+
 shots = 0
 shipcollision = true
 shipcollisionnumber = 0
@@ -63,11 +66,18 @@ centerCursor()
 mx = getAxis("MOUSE_X") 
 my = getAxis("MOUSE_Y") 
 
-centerCursor()
 
 setText(controlsText, "W to accelerate | S to brake | A&D to roll | Mouse for pitch and yaw; or press tab to enable gamepad")
 setTextColor(controlsText, {255, 0, 127, 255})
 --------
+function time()
+	sec = sec + 1
+
+	if sec == 60 then
+		min = min + 1
+		sec = 0
+	end
+end
 
 function menu()
 	quit()
@@ -88,13 +98,11 @@ function handleKeys()
 	end
 	if isKeyPressed("A") then
 		rotate(ship, {-1.0, 0.0, 0.0}, 0.55, "local") 
-
 		rotate(cambody, {-1.0, 0.0, 0.0}, 0.55, "local") 
 	end
 	if isKeyPressed("D") then
 		rotate(ship, {1.0, 0.0, 0.0}, 0.55, "local")
 		rotate(cambody, {1.0, 0.0, 0.0}, 0.55, "local")
-
 	end
 	if isKeyPressed("S") then
 		addCentralForce(ship, {-0.5, 0.0, 0.0}, "local")
@@ -133,11 +141,13 @@ function handleKeys()
 	end
 end
 
+
 -- scene update
 function onSceneUpdate()
+	--tracks time
+	time()
 
-		--Ship crash handeling
-
+	--Ship crash handeling
 	if shipcollision then
 
 			if isCollisionBetween(ship, landmass) then
@@ -181,8 +191,7 @@ function onSceneUpdate()
 		rotate(cambody, {0.0, 0.0, -1.0}, dz*1.25, "local")
 	end
 
-	if keyboard then
-		--------
+		-------
 		-- rotate camera (X mouse)
 		rotate(cambody, {0.0, 0.0, -1.0}, dx*150.0, "local")
 		-- rotate camera (Y mouse)
@@ -197,8 +206,6 @@ function onSceneUpdate()
 		---------
 		setRotation(cambody, camrotation)
 
-
-
 		-- rotate Ship (X mouse)
 		rotate(ship, {0.0, 0.0, -1.0}, dx*150.0, "local")
 		
@@ -209,42 +216,38 @@ function onSceneUpdate()
 			rotation[1] = 50.0
 		elseif rotation[1] < -50.0 then
 			rotation[1] = -50.0
-		end
 	---------
 		setRotation(ship, rotation)
-	end
 
-	--ambient forces
-	addCentralForce(ship, {0.0, 0.0, .196}, "local")
-	addCentralForce(ship, {0.75, 0.0, 0.0}, "local")
+		end
 
-	addCentralForce(Eship0, {0.0, 0.0, .196}, "local")
-	addCentralForce(Eship0, {0.0, -0.75, 0.0}, "local")
+	---- ambient forces
+		addCentralForce(ship, {0.0, 0.0, .196}, "local")
+		addCentralForce(ship, {0.75, 0.0, 0.0}, "local")
 
-	addCentralForce(Eship1, {0.0, 0.0, .196}, "local")
-	addCentralForce(Eship1, {0.0, -0.75, 0.0}, "local")
+		addCentralForce(Eship0, {0.0, 0.0, .196}, "local")
+		addCentralForce(Eship0, {0.0, -0.75, 0.0}, "local")
 
-	addCentralForce(Eship2, {0.0, 0.0, .196}, "local")
-	addCentralForce(Eship2, {0.0, -0.75, 0.0}, "local")
+		addCentralForce(Eship1, {0.0, 0.0, .196}, "local")
+		addCentralForce(Eship1, {0.0, -0.75, 0.0}, "local")
 
+		addCentralForce(Eship2, {0.0, 0.0, .196}, "local")
+		addCentralForce(Eship2, {0.0, -0.75, 0.0}, "local")
 
 
 
 	handleKeys()
+	
+	dx = getAxis("MOUSE_X") - mx 
+	dy = getAxis("MOUSE_Y") - my 
 
-	if keyboard then
-		addCentralForce(ship, {0.0, dx * 0.5, 0.0}, "local")
-		addCentralForce(ship, {0.0, 0.0, dy * 0.5}, "local")
-	 --------
-		-- get mouse direction
-		dx = getAxis("MOUSE_X") - mx 
-		dy = getAxis("MOUSE_Y") - my 
+	centerCursor()
 
-		-- centerCursor()
-		if getSystemTick() % 3 == 0 then -- Experiment a little bit with the value. 3 is just an example
-            centerCursor()
-		end
-	end
+			addCentralForce(ship, {0.0, dx * 0.5, 0.0}, "local")
+			addCentralForce(ship, {0.0, 0.0, dy * 0.5}, "local")
+			
+		mx = getAxis("MOUSE_X") 
+		my = getAxis("MOUSE_Y") 
 ---------
 
  	--hit detection vars
@@ -435,5 +438,5 @@ function onSceneUpdate()
 	if Eship2collisionnumber >= 4 then
 		deactivate(Eship2)
 	end
-
+	
 end

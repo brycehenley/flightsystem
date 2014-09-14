@@ -14,4 +14,7 @@ function onSceneUpdate()
 		loadLevel("levels/titlescreen.level")
 	end
 
+	if isKeyPressed("ESCAPE") then
+		quit()
+	end
 end

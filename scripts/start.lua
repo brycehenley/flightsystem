@@ -67,7 +67,7 @@ mx = getAxis("MOUSE_X")
 my = getAxis("MOUSE_Y") 
 
 
-setText(controlsText, "W to accelerate | S to brake | A&D to roll | Mouse for pitch and yaw; or press tab to enable gamepad")
+setText(controlsText, "W to accelerate | S to brake | A&D to roll | Mouse for pitch and yaw; or press tab or dpad-down to enable gamepad")
 setTextColor(controlsText, {255, 0, 127, 255})
 --------
 function time()
@@ -104,6 +104,7 @@ function handleKeys()
 		rotate(ship, {1.0, 0.0, 0.0}, 0.55, "local")
 		rotate(cambody, {1.0, 0.0, 0.0}, 0.55, "local")
 	end
+	
 	if isKeyPressed("S") then
 		addCentralForce(ship, {-0.5, 0.0, 0.0}, "local")
 	end
@@ -116,10 +117,7 @@ function handleKeys()
 	--if isKeyPressed("SPACE") then
 	--	land()
 	--end
-	if isKeyPressed("JOY1_BUTTON_START") then
-		gamepad = true
-		keyboard = false
-	end
+
 	if isKeyPressed("TAB") then
 		gamepad = true
 		keyboard = false
@@ -171,24 +169,26 @@ function onSceneUpdate()
 
 	if gamepad then
 
-		dx = getAxis("JOY1_AXIS_LEFTX")
-		dy = getAxis("JOY1_AXIS_LEFTY")
+		dl = getAxis("JOY1_AXIS_LEFTX")
+		dm = getAxis("JOY1_AXIS_LEFTY")
 		dz = getAxis("JOY1_AXIS_RIGHTX")
 		dw = getAxis("JOY1_AXIS_RIGHTY")
 
-		if dx > -0.2 and dx < 0.2 then dx = 0.0 end
-		if dy > -0.2 and dy < 0.2 then dy = 0.0 end
-		if dz > -0.2 and dy < 0.2 then dy = 0.0 end
-		if dw > -0.2 and dy < 0.2 then dy = 0.0 end
+		if dl > -0.2 and dl < 0.2 then dl = 0.0 end
+		if dm > -0.2 and dm < 0.2 then dm = 0.0 end
+		-- yaw
+		if dz > -0.2 and dz < 0.2 then dz = 0.0 end
+		-- pitch
+		if dw > -0.2 and dw < 0.2 then dw = 0.0 end
 
-		rotate(ship, {1.0, 0.0, 0.0}, dx*1.25, "local")
-		rotate(cambody, {1.0, 0.0, 0.0}, dx*1.25, "local")
-
-		rotate(ship, {0.0, -1.0, 0.0}, dw*1.25, "local")
-		rotate(cambody, {0.0, -1.0, 0.0}, dw*1.25, "local")
+		rotate(ship, {1.0, 0.0, 0.0}, dl*1.25, "local")
+		rotate(cambody, {1.0, 0.0, 0.0}, dl*1.25, "local")
 
 		rotate(ship, {0.0, 0.0, -1.0}, dz*1.25, "local")
 		rotate(cambody, {0.0, 0.0, -1.0}, dz*1.25, "local")
+
+		rotate(ship, {0.0, -1.0, 0.0}, dw*1.25, "local")
+		rotate(cambody, {0.0, -1.0, 0.0}, dw*1.25, "local")
 	end
 
 		-------
@@ -243,9 +243,11 @@ function onSceneUpdate()
 
 	centerCursor()
 
-			addCentralForce(ship, {0.0, dx * 0.5, 0.0}, "local")
-			addCentralForce(ship, {0.0, 0.0, dy * 0.5}, "local")
-			
+		
+		addCentralForce(ship, {0.0, dx * 0.5, 0.0}, "local")
+		addCentralForce(ship, {0.0, 0.0, dy * 0.5}, "local")
+
+
 		mx = getAxis("MOUSE_X") 
 		my = getAxis("MOUSE_Y") 
 ---------

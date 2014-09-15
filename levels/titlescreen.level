@@ -12,6 +12,20 @@
 			gravity="0.000000 0.000000 -0.981000"
 			ambientLight="0.000000 0.000000 0.000000" />
 
+		<Light name="Light0">
+			<active value="true" />
+			<transform 
+				position="2.373820 -5.973633 44.384743"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				radius="1000.000000"
+				color="1.000000 1.000000 1.000000"
+				intensity="1.000000"
+				spotAngle="180.000000"
+				spotExponent="0.000000"
+				shadow="false" />
+		</Light>
 		<Camera name="Camera0">
 			<active value="true" />
 			<transform 
@@ -70,6 +84,29 @@
 				<![CDATA[Text]]>
 			</textData>
 		</Text>
+		<Entity name="Entity0" file="../meshs/logo.mesh">
+			<BoundingBox min="-0.500001 -0.500001 0.000000" max="0.500001 0.500001 0.000000" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="0.000000 22.803841 -1.727749"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="30.000000 30.000000 1.000000" />
+			<properties 
+				invisible="false"
+				shadow="false"
+				occluder="false" />
+			<physics 
+				shape="Box"
+				ghost="false"
+				mass="0.000000"
+				friction="0.500000"
+				restitution="0.000000"
+				linearDamping="0.010000"
+				angularDamping="0.010000"
+				angularFactor="1.000000"
+				linearFactor="1.000000 1.000000 1.000000" />
+		</Entity>
 
 	</Scene>
 

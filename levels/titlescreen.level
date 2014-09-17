@@ -42,6 +42,29 @@
 				fogDistance="0.000000"
 				skyboxTextures="" />
 		</Camera>
+		<Entity name="Entity0" file="../meshs/logo.mesh">
+			<BoundingBox min="-0.500001 -0.500001 0.000000" max="0.500001 0.500001 0.000000" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="0.000000 22.803841 -1.727749"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="30.000000 30.000000 1.000000" />
+			<properties 
+				invisible="false"
+				shadow="false"
+				occluder="false" />
+			<physics 
+				shape="Box"
+				ghost="false"
+				mass="0.000000"
+				friction="0.500000"
+				restitution="0.000000"
+				linearDamping="0.010000"
+				angularDamping="0.010000"
+				angularFactor="1.000000"
+				linearFactor="1.000000 1.000000 1.000000" />
+		</Entity>
 		<Text name="Text0" file="../fonts/arkitech/Arkitech Bold.ttf">
 			<active value="true" />
 			<transform 
@@ -84,29 +107,6 @@
 				<![CDATA[Text]]>
 			</textData>
 		</Text>
-		<Entity name="Entity0" file="../meshs/logo.mesh">
-			<BoundingBox min="-0.500001 -0.500001 0.000000" max="0.500001 0.500001 0.000000" />
-			<anim id="0" />
-			<active value="true" />
-			<transform 
-				position="0.000000 22.803841 -1.727749"
-				rotation="0.000000 -0.000000 0.000000"
-				scale="30.000000 30.000000 1.000000" />
-			<properties 
-				invisible="false"
-				shadow="false"
-				occluder="false" />
-			<physics 
-				shape="Box"
-				ghost="false"
-				mass="0.000000"
-				friction="0.500000"
-				restitution="0.000000"
-				linearDamping="0.010000"
-				angularDamping="0.010000"
-				angularFactor="1.000000"
-				linearFactor="1.000000 1.000000 1.000000" />
-		</Entity>
 
 	</Scene>
 

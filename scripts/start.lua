@@ -56,9 +56,9 @@ min = 0
 shots = 0
 shipcollision = true
 shipcollisionnumber = 0
-Eship0collisionnumber = 0
 Eship1collisionnumber = 0
 Eship2collisionnumber = 0
+Eship3collisionnumber = 0
 
 hideCursor()
 centerCursor()
@@ -220,7 +220,7 @@ function onSceneUpdate()
 		setRotation(ship, rotation)
 
 		end
-
+ 
 	---- ambient forces
 		addCentralForce(ship, {0.0, 0.0, .196}, "local")
 		addCentralForce(ship, {0.75, 0.0, 0.0}, "local")
@@ -383,13 +383,13 @@ function onSceneUpdate()
 	        	end
 	        		
 	        		if getName(object1) == "Eship0" then
-		        		Eship0collisionnumber = Eship0collisionnumber + 1
-		        	end
-		        	if getName(object1) == "Eship1" then
 		        		Eship1collisionnumber = Eship1collisionnumber + 1
 		        	end
-		        	if getName(object1) == "Eship2" then
+		        	if getName(object1) == "Eship1" then
 		        		Eship2collisionnumber = Eship2collisionnumber + 1
+		        	end
+		        	if getName(object1) == "Eship2" then
+		        		Eship3collisionnumber = Eship3collisionnumber + 1
 		        	end
 		        		
 	        		table.insert(cubecloneList1, #cubecloneList1 + 1, getClone(testcube))
@@ -425,19 +425,25 @@ function onSceneUpdate()
 
 
 ------------------------------------
-	--Aircraft AI
+	--Aircraft AI and collision
 
 
 	Eship2pos = getPosition(Eship2)
 	shippos = getPosition(ship)
+	if debug then
+		print "Eship Position: "
+		print Eship2pos
+		print "Ship Position: "
+		print shippos
+	end
 
-	if Eship0collisionnumber >= 4 then
+	if Eship1collisionnumber >= 4 then
 		deactivate(Eship0)
 	end
-	if Eship1collisionnumber >= 4 then
+	if Eship2collisionnumber >= 4 then
 		deactivate(Eship1)
 	end
-	if Eship2collisionnumber >= 4 then
+	if Eship3collisionnumber >= 4 then
 		deactivate(Eship2)
 	end
 	

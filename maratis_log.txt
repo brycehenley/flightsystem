@@ -6,4 +6,6 @@ Log tracked at level :6
 [ Info ] Profiling enabled in main in main.cpp
 [ Error ] Load Vorbis : input does not appear to be an ogg vorbis bitstream in M_loadVorbisSound in MVorbisLoader.cpp
 [ Error ] Load Sound : Unsupported RIFF file in M_loadWAVSound in MWAVLoader.cpp
+[ Error ] Load Vorbis : input does not appear to be an ogg vorbis bitstream in M_loadVorbisSound in MVorbisLoader.cpp
+[ Error ] Load Sound : Unsupported RIFF file in M_loadWAVSound in MWAVLoader.cpp
 [ Info ] Update thread returned with exit code 0 in main in main.cpp

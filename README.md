@@ -1,4 +1,4 @@
-build version : 0.0.116
+build version : 0.0.117
 
 Current version is pre alpha prototype.
 
@@ -8,4 +8,3 @@ version numbering system
 0.2.x beta
 0.3.x release
 1.x.x freelc | first addition to the game
-

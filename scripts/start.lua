@@ -39,11 +39,6 @@ cubecloneList1 = {}
 apoint = {}
 bpoint = {}
 
---Shadow
-enableShadow(ship, shadow)
-enableShadow(landmass, shadow)
-
-
 ---------
 dx = 0.0 -- change in mouse x-axis since last update
 dy = 0.0 -- change in mouse y-axis since last update
@@ -280,13 +275,13 @@ function onSceneUpdate()
 	        	end
 		        	
 		        	if getName(object1) == "Eship0" then
-		        		Eship0collisionnumber = Eship0collisionnumber + 1
-		        	end
-		        	if getName(object1) == "Eship1" then
 		        		Eship1collisionnumber = Eship1collisionnumber + 1
 		        	end
-		        	if getName(object1) == "Eship2" then
+		        	if getName(object1) == "Eship1" then
 		        		Eship2collisionnumber = Eship2collisionnumber + 1
+		        	end
+		        	if getName(object1) == "Eship2" then
+		        		Eship3collisionnumber = Eship3collisionnumber + 1
 		        	end
 
 	        		table.insert(cubecloneList0, #cubecloneList0 + 1, getClone(testcube))
@@ -302,13 +297,13 @@ function onSceneUpdate()
 	        	end
 	        		
 	        		if getName(object1) == "Eship0" then
-		        		Eship0collisionnumber = Eship0collisionnumber + 1
-		        	end
-		        	if getName(object1) == "Eship1" then
 		        		Eship1collisionnumber = Eship1collisionnumber + 1
 		        	end
-		        	if getName(object1) == "Eship2" then
+		        	if getName(object1) == "Eship1" then
 		        		Eship2collisionnumber = Eship2collisionnumber + 1
+		        	end
+		        	if getName(object1) == "Eship2" then
+		        		Eship3collisionnumber = Eship3collisionnumber + 1
 		        	end
 		        		
 	        		table.insert(cubecloneList1, #cubecloneList1 + 1, getClone(testcube))
@@ -361,13 +356,13 @@ function onSceneUpdate()
 	        	end
 		        	
 		        	if getName(object1) == "Eship0" then
-		        		Eship0collisionnumber = Eship0collisionnumber + 1
-		        	end
-		        	if getName(object1) == "Eship1" then
 		        		Eship1collisionnumber = Eship1collisionnumber + 1
 		        	end
-		        	if getName(object1) == "Eship2" then
+		        	if getName(object1) == "Eship1" then
 		        		Eship2collisionnumber = Eship2collisionnumber + 1
+		        	end
+		        	if getName(object1) == "Eship2" then
+		        		Eship3collisionnumber = Eship3collisionnumber + 1
 		        	end
 
 	        		table.insert(cubecloneList0, #cubecloneList0 + 1, getClone(testcube))
@@ -430,12 +425,6 @@ function onSceneUpdate()
 
 	Eship2pos = getPosition(Eship2)
 	shippos = getPosition(ship)
-	if debug then
-		print "Eship Position: "
-		print Eship2pos
-		print "Ship Position: "
-		print shippos
-	end
 
 	if Eship1collisionnumber >= 4 then
 		deactivate(Eship0)

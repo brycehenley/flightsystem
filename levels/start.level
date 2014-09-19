@@ -1,4 +1,4 @@
-<Maratis version="3.0">
+<Maratis version="3.1">
 
 <Level>
 
@@ -9,7 +9,8 @@
 		<script file="../scripts/start.lua" />
 		<properties 
 			data="Static"
-			gravity="0.000000 0.000000 -0.981000" />
+			gravity="0.000000 0.000000 -0.981000"
+			ambientLight="0.000000 0.000000 0.000000" />
 
 		<Light name="Light0">
 			<active value="true" />
@@ -29,25 +30,11 @@
 		<Light name="Light2">
 			<active value="true" />
 			<transform 
-				position="3964.283691 4092.348145 5039.889160"
+				position="14355.089844 -12601.024414 5039.889160"
 				rotation="0.000000 -0.000000 0.000000"
 				scale="1.000000 1.000000 1.000000" />
 			<properties 
-				radius="100000.000000"
-				color="1.000000 1.000000 1.000000"
-				intensity="1.000000"
-				spotAngle="180.000000"
-				spotExponent="0.000000"
-				shadow="false" />
-		</Light>
-		<Light name="Light3">
-			<active value="true" />
-			<transform 
-				position="2140.013184 54.093887 -8666.731445"
-				rotation="0.000000 -0.000000 0.000000"
-				scale="1.000000 1.000000 1.000000" />
-			<properties 
-				radius="100000.000000"
+				radius="200000.000000"
 				color="1.000000 1.000000 1.000000"
 				intensity="1.000000"
 				spotAngle="180.000000"
@@ -83,7 +70,8 @@
 				clippingNear="1.000000"
 				clippingFar="100000.000000"
 				fog="false"
-				fogDistance="0.000000" />
+				fogDistance="0.000000"
+				skyboxTextures="" />
 			<Behavior name="LookAt">
 				<properties 
 					target="" />
@@ -113,7 +101,9 @@
 				rotation="0.000000 -0.000000 0.000000"
 				scale="5.000000 5.000000 5.000000" />
 			<properties 
-				invisible="false" />
+				invisible="false"
+				shadow="true"
+				occluder="false" />
 			<physics 
 				shape="Capsule"
 				ghost="false"
@@ -134,7 +124,9 @@
 				rotation="0.000000 -0.000000 0.000000"
 				scale="1600.000000 1600.000000 1600.000000" />
 			<properties 
-				invisible="false" />
+				invisible="false"
+				shadow="true"
+				occluder="false" />
 			<physics 
 				shape="TriangleMesh"
 				ghost="false"
@@ -156,7 +148,9 @@
 				rotation="0.000000 0.000000 -90.000000"
 				scale="0.200000 0.200000 0.200000" />
 			<properties 
-				invisible="false" />
+				invisible="false"
+				shadow="true"
+				occluder="false" />
 		</Entity>
 		<Entity name="Laser1" file="../meshs/lazor.mesh">
 			<BoundingBox min="-1.000000 -10.944000 -1.000001" max="1.000000 10.944000 1.000001" />
@@ -168,25 +162,9 @@
 				rotation="0.000000 0.000000 -90.000000"
 				scale="0.200000 0.200000 0.200000" />
 			<properties 
-				invisible="false" />
-		</Entity>
-		<Entity name="Entity2" file="../meshs/Skybox.mesh">
-			<BoundingBox min="-78.884514 -78.867805 -70.782257" max="78.884544 78.867790 86.986786" />
-			<anim id="0" />
-			<active value="true" />
-			<transform 
-				position="-1428.780029 0.000000 0.000000"
-				rotation="0.000000 -0.000000 0.000000"
-				scale="100.000000 100.000000 100.000000" />
-			<properties 
-				invisible="false" />
-			<Behavior name="Follow">
-				<properties 
-					target="Entity0"
-					delay="0.000000"
-					offset="0.000000 0.000000 0.000000"
-					local="false" />
-			</Behavior>
+				invisible="false"
+				shadow="true"
+				occluder="false" />
 		</Entity>
 		<Entity name="Entity3" file="../meshs/emitter.mesh">
 			<BoundingBox min="-1.000000 -1.000001 -1.000000" max="1.000000 1.000000 1.000000" />
@@ -197,7 +175,9 @@
 				rotation="0.000000 4.083245 0.000000"
 				scale="1.000000 1.000000 1.000000" />
 			<properties 
-				invisible="true" />
+				invisible="true"
+				shadow="true"
+				occluder="false" />
 			<Behavior name="Follow">
 				<properties 
 					target="Entity0"
@@ -215,7 +195,9 @@
 				rotation="0.000000 -0.000000 0.000000"
 				scale="1.000000 1.000000 1.000000" />
 			<properties 
-				invisible="true" />
+				invisible="true"
+				shadow="true"
+				occluder="false" />
 			<Behavior name="Follow">
 				<properties 
 					target="Entity0"
@@ -233,7 +215,9 @@
 				rotation="0.000000 -0.000000 0.000000"
 				scale="1.000000 1.000000 1.000000" />
 			<properties 
-				invisible="true" />
+				invisible="true"
+				shadow="true"
+				occluder="false" />
 			<Behavior name="Follow">
 				<properties 
 					target="Entity0"
@@ -251,7 +235,9 @@
 				rotation="0.000000 -0.000000 0.000000"
 				scale="1.000000 1.000000 1.000000" />
 			<properties 
-				invisible="true" />
+				invisible="true"
+				shadow="true"
+				occluder="false" />
 			<Behavior name="Follow">
 				<properties 
 					target="Entity0"
@@ -269,7 +255,9 @@
 				rotation="0.000000 -0.000000 0.000000"
 				scale="1.000000 1.000000 1.000000" />
 			<properties 
-				invisible="true" />
+				invisible="true"
+				shadow="true"
+				occluder="false" />
 			<Behavior name="Follow">
 				<properties 
 					target="Entity0"
@@ -288,7 +276,9 @@
 				rotation="90.000000 -0.000000 -90.000000"
 				scale="0.300000 0.300000 0.300000" />
 			<properties 
-				invisible="false" />
+				invisible="false"
+				shadow="true"
+				occluder="false" />
 		</Entity>
 		<Entity name="heart1" file="../meshs/heart.mesh">
 			<BoundingBox min="-0.500000 -0.500000 0.000000" max="0.500000 0.500000 0.000000" />
@@ -300,7 +290,9 @@
 				rotation="90.000000 -0.000000 -90.000000"
 				scale="0.300000 0.300000 0.300000" />
 			<properties 
-				invisible="false" />
+				invisible="false"
+				shadow="true"
+				occluder="false" />
 		</Entity>
 		<Entity name="heart2" file="../meshs/heart.mesh">
 			<BoundingBox min="-0.500000 -0.500000 0.000000" max="0.500000 0.500000 0.000000" />
@@ -312,7 +304,9 @@
 				rotation="90.000000 -0.000000 -90.000000"
 				scale="0.300000 0.300000 0.300000" />
 			<properties 
-				invisible="false" />
+				invisible="false"
+				shadow="true"
+				occluder="false" />
 		</Entity>
 		<Entity name="testcube" file="../meshs/emitter.mesh">
 			<BoundingBox min="-1.000000 -1.000001 -1.000000" max="1.000000 1.000000 1.000000" />
@@ -323,7 +317,9 @@
 				rotation="0.000000 -0.000000 0.000000"
 				scale="1.000000 1.000000 1.000000" />
 			<properties 
-				invisible="false" />
+				invisible="false"
+				shadow="true"
+				occluder="false" />
 		</Entity>
 		<Entity name="Eship2" file="../meshs/transport.mesh">
 			<BoundingBox min="-4.192625 -5.305498 -2.686624" max="4.192625 5.597895 2.527055" />
@@ -331,10 +327,12 @@
 			<active value="true" />
 			<transform 
 				position="610.214233 -4402.889160 20.955853"
-				rotation="0.000000 -0.000000 -180.000000"
+				rotation="0.000000 0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
-				invisible="false" />
+				invisible="false"
+				shadow="true"
+				occluder="false" />
 			<physics 
 				shape="Capsule"
 				ghost="false"
@@ -352,10 +350,12 @@
 			<active value="true" />
 			<transform 
 				position="722.399414 -4337.598145 20.955853"
-				rotation="0.000000 -0.000000 -180.000000"
+				rotation="0.000000 0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
-				invisible="false" />
+				invisible="false"
+				shadow="true"
+				occluder="false" />
 			<physics 
 				shape="Capsule"
 				ghost="false"
@@ -373,10 +373,12 @@
 			<active value="true" />
 			<transform 
 				position="831.109863 -4402.889160 20.955853"
-				rotation="0.000000 -0.000000 -180.000000"
+				rotation="0.000000 0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
-				invisible="false" />
+				invisible="false"
+				shadow="true"
+				occluder="false" />
 			<physics 
 				shape="Capsule"
 				ghost="false"
@@ -387,6 +389,19 @@
 				angularDamping="0.250000"
 				angularFactor="1.000000"
 				linearFactor="1.000000 1.000000 1.000000" />
+		</Entity>
+		<Entity name="Entity2" file="../meshs/StormSkybox.mesh">
+			<BoundingBox min="-1.000000 -1.000001 -1.000000" max="1.000000 1.000000 1.000000" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="2137.556152 60.627029 -2414.793457"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="20000.000000 20000.000000 20000.000000" />
+			<properties 
+				invisible="false"
+				shadow="true"
+				occluder="false" />
 		</Entity>
 		<Text name="Text" file="../fonts/philosopher/Philosopher-Regular.ttf">
 			<active value="true" />

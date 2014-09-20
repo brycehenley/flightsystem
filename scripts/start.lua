@@ -144,7 +144,7 @@ function onSceneUpdate()
 	if shipcollision then
 
 			if isCollisionBetween(ship, landmass) then
-				shipcollisionnumber = shipcollisionnumber + 1
+				shipcollisionnumber = shipcollisionnumber + 2
 			end
 			if isCollisionBetween(ship, Eship0) then
 				gameover()
@@ -158,7 +158,7 @@ function onSceneUpdate()
 	
 	end
 
-	if shipcollisionnumber == 5 then
+	if shipcollisionnumber >= 5 then
 		gameover()
 	end
 
@@ -191,30 +191,11 @@ function onSceneUpdate()
 		rotate(cambody, {0.0, 0.0, -1.0}, dx*150.0, "local")
 		-- rotate camera (Y mouse)
 		rotate(cambody, {0.0, -1.0, 0.0}, dy*150.0, "local")
-
-		camrotation = getRotation(cambody)
-		if camrotation[1] > 50.0 then	--Rotation limits on update
-			camrotation[1] = 50.0
-		elseif camrotation[1] < -50.0 then
-			camrotation[1] = -50.0
-		end
-		---------
-		setRotation(cambody, camrotation)
-
 		-- rotate Ship (X mouse)
-		rotate(ship, {0.0, 0.0, -1.0}, dx*150.0, "local")
-		
+		rotate(ship, {0.0, 0.0, -1.0}, dx*150.0, "local")	
 		-- rotate Ship (Y mouse)
 		rotate(ship, {0.0, -1.0, 0.0}, dy*150.0, "local")	
-		rotation = getRotation(ship)
-		if rotation[1] > 50.0 then		--Rotation limits on update
-			rotation[1] = 50.0
-		elseif rotation[1] < -50.0 then
-			rotation[1] = -50.0
-	---------
-		setRotation(ship, rotation)
-
-		end
+		
  
 	---- ambient forces
 		addCentralForce(ship, {0.0, 0.0, .196}, "local")

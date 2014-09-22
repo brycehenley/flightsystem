@@ -65,6 +65,19 @@
 				angularFactor="1.000000"
 				linearFactor="1.000000 1.000000 1.000000" />
 		</Entity>
+		<Entity name="Entity1" file="../meshs/black.mesh">
+			<BoundingBox min="-1.000000 -1.000000 0.000000" max="1.000000 1.000000 0.000000" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="13.135530 22.803841 -5.618149"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="204.503235 166.234375 1.583801" />
+			<properties 
+				invisible="false"
+				shadow="true"
+				occluder="false" />
+		</Entity>
 		<Text name="Text0" file="../fonts/arkitech/Arkitech Bold.ttf">
 			<active value="true" />
 			<transform 

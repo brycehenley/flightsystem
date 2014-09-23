@@ -5,3 +5,5 @@ Log tracked at level :6
 [ Info ] No GL4 compatible context found. Falling back to compat shaders. in MStandardRenderer in MStandardRenderer.cpp
 [ Info ] Profiling enabled in main in main.cpp
 [ Info ] Update thread returned with exit code 0 in main in main.cpp
+stream in M_loadVorbisSound in MVorbisLoader.cpp
+[ Info ] Update thread returned with exit code 0 in main in main.cpp

@@ -7,13 +7,13 @@
 	<MaterialAnim file="logo.mma" />
 	<TextureAnim file="logo.mta" />
 	<Anims num="1">
-		<anim id="0" name="" start="0" end="120" loops="0" />
+		<anim id="0" name="" start="0" end="240" loops="-1" />
 	</Anims>
 </Animation>
 
 <Textures num="1">
 	<Texture id="0">
-		<image filename="../maps/logo.png" mipmap="1" />
+		<image filename="../maps/LogoFinal.png" mipmap="1" />
 		<mapMode value="1" />
 		<tile u="repeat" v="repeat" />
 		<translate x="0.000000" y="0.000000" />

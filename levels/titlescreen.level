@@ -43,29 +43,6 @@
 				fogDistance="0.000000"
 				skyboxTextures="" />
 		</Camera>
-		<Entity name="Entity0" file="../meshs/logo.mesh">
-			<BoundingBox min="-0.500001 -0.500001 0.000000" max="0.500001 0.500001 0.000000" />
-			<anim id="0" />
-			<active value="true" />
-			<transform 
-				position="0.000000 22.803841 -1.727749"
-				rotation="0.000000 -0.000000 0.000000"
-				scale="30.000000 30.000000 1.000000" />
-			<properties 
-				invisible="false"
-				shadow="false"
-				occluder="false" />
-			<physics 
-				shape="Box"
-				ghost="false"
-				mass="0.000000"
-				friction="0.500000"
-				restitution="0.000000"
-				linearDamping="0.010000"
-				angularDamping="0.010000"
-				angularFactor="1.000000"
-				linearFactor="1.000000 1.000000 1.000000" />
-		</Entity>
 		<Entity name="Entity1" file="../meshs/black.mesh">
 			<BoundingBox min="-1.000000 -1.000000 0.000000" max="1.000000 1.000000 0.000000" />
 			<anim id="0" />
@@ -74,6 +51,19 @@
 				position="13.135530 22.803841 -5.618149"
 				rotation="0.000000 -0.000000 0.000000"
 				scale="204.503235 166.234375 1.583801" />
+			<properties 
+				invisible="false"
+				shadow="true"
+				occluder="false" />
+		</Entity>
+		<Entity name="Entity0" file="../meshs/logo.mesh">
+			<BoundingBox min="-0.500001 -0.500001 0.000000" max="0.500001 0.500001 0.000000" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="35.288208 25.154678 -3.964790"
+				rotation="0.000000 0.000000 -13.319469"
+				scale="101.499481 101.499481 14.594801" />
 			<properties 
 				invisible="false"
 				shadow="true"

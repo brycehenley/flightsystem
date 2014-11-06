@@ -21,8 +21,3 @@ https://github.com/Sponk/NeoEditor/tree/development
 Credits:
 	SOFTWARE
 	Neo3d http://www.neo-engine.de/
-
-	ART
-
-	PEOPLE
-	Bryfe

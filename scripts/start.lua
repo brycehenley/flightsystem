@@ -58,6 +58,7 @@ Eship3collisionnumber = 0
 hideCursor()
 centerCursor()
 
+
 mx = getAxis("MOUSE_X") 
 my = getAxis("MOUSE_Y") 
 
@@ -89,19 +90,19 @@ end
 
 function handleKeys()
 	if isKeyPressed("W") then
-		addCentralForce(ship, {5.0, 0.0, 0.0}, "local")
+		addCentralForce(ship, {4000.0, 0.0, 0.0}, "local")
 	end
 	if isKeyPressed("A") then
-		rotate(ship, {-1.0, 0.0, 0.0}, 0.55, "local") 
-		rotate(cambody, {-1.0, 0.0, 0.0}, 0.55, "local") 
+		rotate(ship, {-1.0, 0.0, 0.0}, 0.75, "local") 
+		rotate(cambody, {-1.0, 0.0, 0.0}, 0.75, "local") 
 	end
 	if isKeyPressed("D") then
-		rotate(ship, {1.0, 0.0, 0.0}, 0.55, "local")
-		rotate(cambody, {1.0, 0.0, 0.0}, 0.55, "local")
+		rotate(ship, {1.0, 0.0, 0.0}, 0.75, "local")
+		rotate(cambody, {1.0, 0.0, 0.0}, 0.75, "local")
 	end
 	
 	if isKeyPressed("S") then
-		addCentralForce(ship, {-0.5, 0.0, 0.0}, "local")
+		addCentralForce(ship, {-100.0, 0.0, 0.0}, "local")
 	end
 	if isKeyPressed("BACKSPACE") then
 		menu()
@@ -120,7 +121,7 @@ function handleKeys()
 	
 	if gamepad then
 		if isKeyPressed("JOY1_BUTTON_RIGHTSTICK") then
-			addCentralForce(ship, {6.0, 0.0, 0.0}, "local")
+			addCentralForce(ship, {4000.0, 0.0, 0.0}, "local")
 		end
 		if isKeyPressed("JOY1_BUTTON_RIGHTSHOULDER") then
 			addCentralForce(ship, {-0.5, 0.0, 0.0}, "local")
@@ -198,17 +199,17 @@ function onSceneUpdate()
 		
  
 	---- ambient forces
-		addCentralForce(ship, {0.0, 0.0, .196}, "local")
-		addCentralForce(ship, {0.75, 0.0, 0.0}, "local")
+		addCentralForce(ship, {0.0, 0.0, 196.0}, "local")
+		addCentralForce(ship, {750.0, 0.0, 0.0}, "local")
 
-		addCentralForce(Eship0, {0.0, 0.0, .196}, "local")
-		addCentralForce(Eship0, {0.0, -0.75, 0.0}, "local")
+		addCentralForce(Eship0, {0.0, 0.0, 196.0}, "local")
+		addCentralForce(Eship0, {0.0, -750.0, 0.0}, "local")
 
-		addCentralForce(Eship1, {0.0, 0.0, .196}, "local")
-		addCentralForce(Eship1, {0.0, -0.75, 0.0}, "local")
+		addCentralForce(Eship1, {0.0, 0.0, 196.0}, "local")
+		addCentralForce(Eship1, {0.0, -750, 0.0}, "local")
 
-		addCentralForce(Eship2, {0.0, 0.0, .196}, "local")
-		addCentralForce(Eship2, {0.0, -0.75, 0.0}, "local")
+		addCentralForce(Eship2, {0.0, 0.0, 196.0}, "local")
+		addCentralForce(Eship2, {0.0, -750.0, 0.0}, "local")
 
 
 

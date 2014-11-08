@@ -7,7 +7,7 @@ setText(menuheadertext , "Skyland")
 setText(menubodytext , "press Space or Start to begin")
 setText(menusubbodytext , "press Escape to exit") 
 
-
+resizeWindow(1920, 1080)
 
 function onSceneUpdate()
 

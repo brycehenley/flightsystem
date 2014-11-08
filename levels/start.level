@@ -65,6 +65,7 @@
 				scale="1.000000 1.000000 1.000000" />
 			<properties 
 				clearColor="0.200000 0.300000 0.400000"
+				fogColor="1.000000 1.000000 1.000000"
 				ortho="false"
 				fov="60.000000"
 				clippingNear="1.000000"
@@ -107,8 +108,8 @@
 			<physics 
 				shape="Capsule"
 				ghost="false"
-				mass="1.000000"
-				friction="0.500000"
+				mass="1000.000000"
+				friction="0.200000"
 				restitution="0.920000"
 				linearDamping="0.100000"
 				angularDamping="0.250000"
@@ -327,7 +328,7 @@
 			<active value="true" />
 			<transform 
 				position="610.214233 -4402.889160 20.955853"
-				rotation="0.000000 -0.000000 -180.000000"
+				rotation="-0.000000 -0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -350,7 +351,7 @@
 			<active value="true" />
 			<transform 
 				position="722.399414 -4337.598145 20.955853"
-				rotation="0.000000 -0.000000 -180.000000"
+				rotation="-0.000000 -0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -373,7 +374,7 @@
 			<active value="true" />
 			<transform 
 				position="831.109863 -4402.889160 20.955853"
-				rotation="0.000000 -0.000000 -180.000000"
+				rotation="-0.000000 -0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"

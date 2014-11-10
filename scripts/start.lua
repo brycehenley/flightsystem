@@ -1,6 +1,8 @@
 Main = getScene("Scene-1")
 Camera = getObject("Camera0")
 
+enableGui(0)
+
 debug = false
 gamepad = false
 keyboard = true

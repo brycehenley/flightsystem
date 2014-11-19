@@ -2,9 +2,18 @@
 
 <Mesh>
 
+<Animation>
+	<ArmatureAnim file="logo.maa" />
+	<MaterialAnim file="logo.mma" />
+	<TextureAnim file="logo.mta" />
+	<Anims num="1">
+		<anim id="0" name="" start="0" end="240" loops="-1" />
+	</Anims>
+</Animation>
+
 <Textures num="1">
 	<Texture id="0">
-		<image filename="../../../../../media/bryce/SYS/Skyland/flightsystem/maps/logo.png" mipmap="1" />
+		<image filename="../maps/LogoFinal.png" mipmap="1" />
 		<mapMode value="1" />
 		<tile u="repeat" v="repeat" />
 		<translate x="0.000000" y="0.000000" />
@@ -29,16 +38,16 @@
 	</Material>
 </Materials>
 
-<BoundingBox minx="-0.500003" miny="-0.500003" minz="0.000000" maxx="0.500003" maxy="0.500003" maxz="0.000000" />
+<BoundingBox minx="-0.500001" miny="-0.500001" minz="0.000000" maxx="0.500001" maxy="0.500001" maxz="0.000000" />
 
 <SubMeshs num="1">
 	<SubMesh id="0">
-		<BoundingBox minx="-0.500003" miny="-0.500003" minz="0.000000" maxx="0.500003" maxy="0.500003" maxz="0.000000" />
+		<BoundingBox minx="-0.500001" miny="-0.500001" minz="0.000000" maxx="0.500001" maxy="0.500001" maxz="0.000000" />
 		<Vertices num="4">
-			<vertex x="-0.500003" y="-0.499997" z="0.000000" />
-			<vertex x="0.499997" y="-0.500003" z="0.000000" />
-			<vertex x="0.500003" y="0.499997" z="0.000000" />
-			<vertex x="-0.499997" y="0.500003" z="0.000000" />
+			<vertex x="-0.500001" y="-0.499999" z="0.000000" />
+			<vertex x="0.499999" y="-0.500001" z="0.000000" />
+			<vertex x="0.500001" y="0.499999" z="0.000000" />
+			<vertex x="-0.499999" y="0.500001" z="0.000000" />
 		</Vertices>
 		<Normals num="4">
 			<normal x="0.000000" y="0.000000" z="1.000000" />
@@ -61,7 +70,7 @@
 			<index value="0" />
 		</Indices>
 		<Displays num="1">
-			<display primType="triangles" begin="0" size="6" material="0" cullFace="0" />
+			<display primType="triangles" begin="0" size="6" material="0" cullFace="2" />
 		</Displays>
 	</SubMesh>
 </SubMeshs>

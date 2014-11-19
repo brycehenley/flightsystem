@@ -57,7 +57,7 @@
 				occluder="false" />
 		</Entity>
 		<Entity name="Entity0" file="../meshs/logo.mesh">
-			<BoundingBox min="-0.500003 -0.500003 0.000000" max="0.500003 0.500003 0.000000" />
+			<BoundingBox min="-0.500001 -0.500001 0.000000" max="0.500001 0.500001 0.000000" />
 			<anim id="0" />
 			<active value="true" />
 			<transform 
@@ -111,6 +111,13 @@
 				<![CDATA[Text]]>
 			</textData>
 		</Text>
+		<Group name="Group0">
+			<active value="true" />
+			<transform 
+				position="0.000000 0.000000 50.743805"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+		</Group>
 
 	</Scene>
 

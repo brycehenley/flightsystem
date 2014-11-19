@@ -1,4 +1,4 @@
-build version : 0.0.117
+build version : 0.0.118
 
 Current version is pre alpha prototype game system.
 

@@ -104,7 +104,7 @@ function handleKeys()
 	end
 	
 	if isKeyPressed("S") then
-		addCentralForce(ship, {-100.0, 0.0, 0.0}, "local")
+		addCentralForce(ship, {-300.0, 0.0, 0.0}, "local")
 	end
 	if isKeyPressed("BACKSPACE") then
 		menu()
@@ -126,10 +126,10 @@ function handleKeys()
 			addCentralForce(ship, {4000.0, 0.0, 0.0}, "local")
 		end
 		if isKeyPressed("JOY1_BUTTON_RIGHTSHOULDER") then
-			addCentralForce(ship, {-0.5, 0.0, 0.0}, "local")
+			addCentralForce(ship, {-100.0, 0.0, 0.0}, "local")
 		end
 		if isKeyPressed("JOY1_BUTTON_LEFTSHOULDER") then
-			addCentralForce(ship, {-0.3, 0.0, 0.0}, "local")
+			addCentralForce(ship, {-300.0, 0.0, 0.0}, "local")
 		end
 		if isKeyPressed("JOY1_BUTTON_Y") then
 			menu()
@@ -208,7 +208,7 @@ function onSceneUpdate()
 		addCentralForce(Eship0, {0.0, -750.0, 0.0}, "local")
 
 		addCentralForce(Eship1, {0.0, 0.0, 196.0}, "local")
-		addCentralForce(Eship1, {0.0, -750, 0.0}, "local")
+		addCentralForce(Eship1, {0.0, -750.0, 0.0}, "local")
 
 		addCentralForce(Eship2, {0.0, 0.0, 196.0}, "local")
 		addCentralForce(Eship2, {0.0, -750.0, 0.0}, "local")

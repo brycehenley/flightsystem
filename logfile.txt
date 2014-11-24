@@ -1,5 +1,4 @@
 Log tracked at level :6
 [ Info ] Renderer: 4.4.0 NVIDIA 331.38 in MStandardRenderer in MStandardRenderer.cpp
 [ Info ] Renderer: 4.4.0 NVIDIA 331.38 in MStandardRenderer in MStandardRenderer.cpp
-[ Info ] Profiling enabled in main in main.cpp
 [ Info ] Update thread returned with exit code 0 in main in main.cpp

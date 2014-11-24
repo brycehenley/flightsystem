@@ -328,7 +328,7 @@
 			<active value="true" />
 			<transform 
 				position="610.214233 -4402.889160 20.955853"
-				rotation="-0.000000 -0.000000 -180.000000"
+				rotation="0.000000 0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -351,7 +351,7 @@
 			<active value="true" />
 			<transform 
 				position="722.399414 -4337.598145 20.955853"
-				rotation="-0.000000 -0.000000 -180.000000"
+				rotation="0.000000 0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -374,7 +374,7 @@
 			<active value="true" />
 			<transform 
 				position="831.109863 -4402.889160 20.955853"
-				rotation="-0.000000 -0.000000 -180.000000"
+				rotation="0.000000 0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"

@@ -1,0 +1,16 @@
+Log tracked at level :6
+[ Info ] Neo Player version:	v0.4 in main in main.cpp
+[ Info ] Renderer: 4.4.0 NVIDIA 331.38 in MStandardRenderer in MStandardRenderer.cpp
+[ Info ] Renderer: 4.4.0 NVIDIA 331.38 in MStandardRenderer in MStandardRenderer.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MMeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MMeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MMeshLoad.cpp
+[ Error ] Load Vorbis : input does not appear to be an ogg vorbis bitstream in M_loadVorbisSound in MVorbisLoader.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MMeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MMeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MMeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MMeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MMeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MMeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MMeshLoad.cpp
+[ Info ] Update thread returned with exit code 0 in main in main.cpp

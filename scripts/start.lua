@@ -12,8 +12,10 @@ camera = getObject("Camera0")
 cambody = getObject("Entity3")
 ship = getObject("Entity0")
 landmass = getObject("Entity1")
+obuilding = getObject("obuilding")
+dome = getObject("dome")
 controlsText = getObject("Text")
-skybox = getObject("Entity2")
+skybox = getObject("skybox")
 Eship0 = getObject("Eship0")
 Eship1 = getObject("Eship1")
 Eship2 = getObject("Eship2")
@@ -57,6 +59,9 @@ Eship1collisionnumber = 0
 Eship2collisionnumber = 0
 Eship3collisionnumber = 0
 
+-- no global gravity, gravity is independent to each object.
+setGravity({0.0, 0.0, 0.0})
+
 hideCursor()
 centerCursor()
 
@@ -92,7 +97,7 @@ end
 
 function handleKeys()
 	if isKeyPressed("W") then
-		addCentralForce(ship, {4000.0, 0.0, 0.0}, "local")
+		addCentralForce(ship, {3000.0, 0.0, 0.0}, "local")
 	end
 	if isKeyPressed("A") then
 		rotate(ship, {-1.0, 0.0, 0.0}, 0.75, "local") 
@@ -123,10 +128,7 @@ function handleKeys()
 	
 	if gamepad then
 		if isKeyPressed("JOY1_BUTTON_RIGHTSTICK") then
-			addCentralForce(ship, {4000.0, 0.0, 0.0}, "local")
-		end
-		if isKeyPressed("JOY1_BUTTON_RIGHTSHOULDER") then
-			addCentralForce(ship, {-100.0, 0.0, 0.0}, "local")
+			addCentralForce(ship, {3000.0, 0.0, 0.0}, "local")
 		end
 		if isKeyPressed("JOY1_BUTTON_LEFTSHOULDER") then
 			addCentralForce(ship, {-300.0, 0.0, 0.0}, "local")
@@ -149,14 +151,20 @@ function onSceneUpdate()
 			if isCollisionBetween(ship, landmass) then
 				shipcollisionnumber = shipcollisionnumber + 2
 			end
+			if isCollisionBetween(ship, obuilding) then
+				shipcollisionnumber = shipcollisionnumber + 2
+			end
+			if isCollisionBetween(ship, dome) then
+				shipcollisionnumber = shipcollisionnumber + 2
+			end
 			if isCollisionBetween(ship, Eship0) then
-				gameover()
+				shipcollisionnumber = shipcollisionnumber + 5
 			end
 			if isCollisionBetween(ship, Eship1) then
-				gameover()
+				shipcollisionnumber = shipcollisionnumber + 5
 			end
 			if isCollisionBetween(ship, Eship2) then
-				gameover()
+				shipcollisionnumber = shipcollisionnumber + 5
 			end
 	
 	end
@@ -201,17 +209,14 @@ function onSceneUpdate()
 		
  
 	---- ambient forces
-		addCentralForce(ship, {0.0, 0.0, 196.0}, "local")
-		addCentralForce(ship, {750.0, 0.0, 0.0}, "local")
 
-		addCentralForce(Eship0, {0.0, 0.0, 196.0}, "local")
-		addCentralForce(Eship0, {0.0, -750.0, 0.0}, "local")
+		addCentralForce(ship, {550.0, 0.0, 0.0}, "local")
 
-		addCentralForce(Eship1, {0.0, 0.0, 196.0}, "local")
-		addCentralForce(Eship1, {0.0, -750.0, 0.0}, "local")
+		addCentralForce(Eship0, {0.0, -550.0, 0.0}, "local")
 
-		addCentralForce(Eship2, {0.0, 0.0, 196.0}, "local")
-		addCentralForce(Eship2, {0.0, -750.0, 0.0}, "local")
+		addCentralForce(Eship1, {0.0, -550.0, 0.0}, "local")
+
+		addCentralForce(Eship2, {0.0, -550.0, 0.0}, "local")
 
 
 
@@ -240,6 +245,9 @@ function onSceneUpdate()
 
 	if keyboard then
 		if onKeyDown("MOUSE_BUTTON_LEFT") then 
+
+			addCentralForce(ship, {-1000.0, 0.0, 0.0}, "local")
+
 			endpos0[1] = startpos0[1] + (endpos0[1] - startpos0[1])*1000
 			endpos0[2] = startpos0[2] + (endpos0[2] - startpos0[2])*1000
 			endpos0[3] = startpos0[3] + (endpos0[3] - startpos0[3])*1000
@@ -321,6 +329,9 @@ function onSceneUpdate()
 
 	if gamepad then
 		if onKeyDown("JOY1_BUTTON_LEFTSHOULDER") then 
+
+			addCentralForce(ship, {-1000.0, 0.0, 0.0}, "local")
+
 			endpos0[1] = startpos0[1] + (endpos0[1] - startpos0[1])*1000
 			endpos0[2] = startpos0[2] + (endpos0[2] - startpos0[2])*1000
 			endpos0[3] = startpos0[3] + (endpos0[3] - startpos0[3])*1000

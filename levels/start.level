@@ -163,9 +163,9 @@
 			<anim id="0" />
 			<active value="true" />
 			<transform 
-				position="17.705078 30.859543 -504.583740"
+				position="17.705078 30.859543 -737.775757"
 				rotation="0.000000 -0.000000 0.000000"
-				scale="50.000000 50.000000 50.000000" />
+				scale="75.000000 75.000000 75.000000" />
 			<properties 
 				invisible="false"
 				shadow="true"
@@ -369,8 +369,8 @@
 			<anim id="0" />
 			<active value="true" />
 			<transform 
-				position="610.214233 -4402.889160 20.955853"
-				rotation="0.000000 0.000000 -180.000000"
+				position="-108.285217 -4407.669434 168.813904"
+				rotation="0.000000 -0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -392,8 +392,8 @@
 			<anim id="0" />
 			<active value="true" />
 			<transform 
-				position="722.399414 -4337.598145 20.955853"
-				rotation="0.000000 0.000000 -180.000000"
+				position="3.899924 -4342.378418 168.813904"
+				rotation="0.000000 -0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -415,8 +415,8 @@
 			<anim id="0" />
 			<active value="true" />
 			<transform 
-				position="831.109863 -4402.889160 20.955853"
-				rotation="0.000000 0.000000 -180.000000"
+				position="112.610535 -4407.669434 168.813904"
+				rotation="0.000000 -0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -458,9 +458,32 @@
 			<anim id="0" />
 			<active value="true" />
 			<transform 
-				position="16.634033 30.779785 -507.605591"
+				position="16.634033 30.779785 -737.780029"
 				rotation="0.000000 -0.000000 0.000000"
-				scale="50.000000 50.000000 50.000000" />
+				scale="75.000000 75.000000 75.000000" />
+			<properties 
+				invisible="false"
+				shadow="true"
+				occluder="false" />
+			<physics 
+				shape="TriangleMesh"
+				ghost="false"
+				mass="0.000000"
+				friction="0.500000"
+				restitution="0.000000"
+				linearDamping="0.010000"
+				angularDamping="0.010000"
+				angularFactor="1.000000"
+				linearFactor="1.000000 1.000000 1.000000" />
+		</Entity>
+		<Entity name="dome" file="../meshs/dome.mesh">
+			<BoundingBox min="7.215153 5.119732 12.512133" max="9.457201 7.361780 15.943202" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="17.705078 30.859543 -737.780029"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="75.000000 75.000000 75.000000" />
 			<properties 
 				invisible="false"
 				shadow="true"
@@ -491,29 +514,23 @@
 				<![CDATA[Text]]>
 			</textData>
 		</Text>
-		<Entity name="dome" file="../meshs/dome.mesh">
-			<BoundingBox min="7.215153 5.119732 12.512133" max="9.457201 7.361780 15.943202" />
-			<anim id="0" />
+		<Camera name="Camera1">
 			<active value="true" />
 			<transform 
-				position="17.705078 30.859543 -504.583740"
-				rotation="0.000000 -0.000000 0.000000"
-				scale="50.000000 50.000000 50.000000" />
+				position="16.634033 30.779785 -522.640015"
+				rotation="90.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
 			<properties 
-				invisible="false"
-				shadow="true"
-				occluder="false" />
-			<physics 
-				shape="TriangleMesh"
-				ghost="false"
-				mass="0.000000"
-				friction="0.500000"
-				restitution="0.000000"
-				linearDamping="0.010000"
-				angularDamping="0.010000"
-				angularFactor="1.000000"
-				linearFactor="1.000000 1.000000 1.000000" />
-		</Entity>
+				clearColor="0.200000 0.300000 0.400000"
+				fogColor="1.000000 1.000000 1.000000"
+				ortho="false"
+				fov="60.000000"
+				clippingNear="1.000000"
+				clippingFar="1000.000000"
+				fog="false"
+				fogDistance="0.000000"
+				skyboxTextures="" />
+		</Camera>
 
 	</Scene>
 

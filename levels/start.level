@@ -120,6 +120,23 @@
 					target="" />
 			</Behavior>
 		</Camera>
+		<Camera name="Camera1">
+			<active value="true" />
+			<transform 
+				position="16.634033 30.779785 -522.640015"
+				rotation="90.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				clearColor="0.200000 0.300000 0.400000"
+				fogColor="1.000000 1.000000 1.000000"
+				ortho="false"
+				fov="60.000000"
+				clippingNear="1.000000"
+				clippingFar="1000.000000"
+				fog="false"
+				fogDistance="0.000000"
+				skyboxTextures="" />
+		</Camera>
 		<Sound name="Sound0" file="../sounds/2523__rhumphries__rbh-thunder-storm.wav">
 			<active value="true" />
 			<transform 
@@ -163,7 +180,7 @@
 			<anim id="0" />
 			<active value="true" />
 			<transform 
-				position="17.705078 30.859543 -737.775757"
+				position="17.407837 28.930000 -738.113220"
 				rotation="0.000000 -0.000000 0.000000"
 				scale="75.000000 75.000000 75.000000" />
 			<properties 
@@ -458,7 +475,7 @@
 			<anim id="0" />
 			<active value="true" />
 			<transform 
-				position="16.634033 30.779785 -737.780029"
+				position="17.410000 28.930000 -738.109985"
 				rotation="0.000000 -0.000000 0.000000"
 				scale="75.000000 75.000000 75.000000" />
 			<properties 
@@ -481,7 +498,7 @@
 			<anim id="0" />
 			<active value="true" />
 			<transform 
-				position="17.705078 30.859543 -737.780029"
+				position="17.410000 28.930000 -738.109985"
 				rotation="0.000000 -0.000000 0.000000"
 				scale="75.000000 75.000000 75.000000" />
 			<properties 
@@ -514,10 +531,27 @@
 				<![CDATA[Text]]>
 			</textData>
 		</Text>
-		<Camera name="Camera1">
+		<Camera name="Camera2">
 			<active value="true" />
 			<transform 
-				position="16.634033 30.779785 -522.640015"
+				position="17.410000 30.780001 -737.780029"
+				rotation="90.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				clearColor="0.200000 0.300000 0.400000"
+				fogColor="1.000000 1.000000 1.000000"
+				ortho="false"
+				fov="60.000000"
+				clippingNear="1.000000"
+				clippingFar="1000.000000"
+				fog="false"
+				fogDistance="0.000000"
+				skyboxTextures="" />
+		</Camera>
+		<Camera name="Camera3">
+			<active value="true" />
+			<transform 
+				position="17.407837 28.930000 -738.113220"
 				rotation="90.000000 -0.000000 0.000000"
 				scale="1.000000 1.000000 1.000000" />
 			<properties 

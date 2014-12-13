@@ -45,7 +45,8 @@
 		<Light name="Light21">
 			<active value="true" />
 			<transform 
-				position="254.287323 365.201904 738.601196"
+				parent="Lights"
+				position="254.287445 365.202087 738.601562"
 				rotation="0.000000 -0.000000 0.000000"
 				scale="1.000000 1.000000 1.000000" />
 			<properties 
@@ -59,7 +60,8 @@
 		<Light name="Light211">
 			<active value="true" />
 			<transform 
-				position="-1515.467041 1093.466797 817.668335"
+				parent="Lights"
+				position="-1515.467773 1093.467285 817.668701"
 				rotation="0.000000 -0.000000 0.000000"
 				scale="1.000000 1.000000 1.000000" />
 			<properties 
@@ -73,13 +75,14 @@
 		<Light name="Light212">
 			<active value="true" />
 			<transform 
-				position="-187.457214 434.235535 -319.593262"
+				parent="Lights"
+				position="-187.457306 434.235748 -319.593414"
 				rotation="0.000000 -0.000000 0.000000"
 				scale="1.000000 1.000000 1.000000" />
 			<properties 
 				radius="400.000000"
 				color="1.000000 1.000000 1.000000"
-				intensity="1.000000"
+				intensity="0.500000"
 				spotAngle="180.000000"
 				spotExponent="0.000000"
 				shadow="false" />
@@ -134,7 +137,7 @@
 				shadow="true"
 				occluder="false" />
 			<physics 
-				shape="Capsule"
+				shape="Box"
 				ghost="false"
 				mass="1000.000000"
 				friction="0.100000"
@@ -145,13 +148,13 @@
 				linearFactor="1.000000 1.000000 1.000000" />
 		</Entity>
 		<Entity name="Entity1" file="../meshs/block.mesh">
-			<BoundingBox min="-11.744656 -10.623383 -9.759061" max="12.622906 10.816217 17.588280" />
+			<BoundingBox min="-14.363112 -12.326299 -9.759059" max="12.622904 10.816216 17.588278" />
 			<anim id="0" />
 			<active value="true" />
 			<transform 
 				position="17.407837 28.930000 -738.113220"
 				rotation="0.000000 -0.000000 0.000000"
-				scale="75.000000 75.000000 75.000000" />
+				scale="80.000000 80.000000 80.000000" />
 			<properties 
 				invisible="false"
 				shadow="true"
@@ -356,7 +359,7 @@
 			<active value="true" />
 			<transform 
 				position="-108.285217 -4407.669434 168.813904"
-				rotation="0.000000 0.000000 -180.000000"
+				rotation="0.000000 -0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -379,7 +382,7 @@
 			<active value="true" />
 			<transform 
 				position="3.899924 -4342.378418 168.813904"
-				rotation="0.000000 0.000000 -180.000000"
+				rotation="0.000000 -0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -402,7 +405,7 @@
 			<active value="true" />
 			<transform 
 				position="112.610535 -4407.669434 168.813904"
-				rotation="0.000000 0.000000 -180.000000"
+				rotation="0.000000 -0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -426,7 +429,7 @@
 			<transform 
 				position="17.410000 28.930000 -738.109985"
 				rotation="0.000000 -0.000000 0.000000"
-				scale="75.000000 75.000000 75.000000" />
+				scale="80.000000 80.000000 80.000000" />
 			<properties 
 				invisible="false"
 				shadow="true"
@@ -449,7 +452,7 @@
 			<transform 
 				position="17.410000 28.930000 -738.109985"
 				rotation="0.000000 -0.000000 0.000000"
-				scale="75.000000 75.000000 75.000000" />
+				scale="80.000000 80.000000 80.000000" />
 			<properties 
 				invisible="false"
 				shadow="true"
@@ -480,6 +483,28 @@
 				<![CDATA[Text]]>
 			</textData>
 		</Text>
+		<Light name="Light2121">
+			<active value="true" />
+			<transform 
+				parent="Lights"
+				position="-401.995178 -1111.148682 211.166306"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				radius="3000.000000"
+				color="1.000000 1.000000 1.000000"
+				intensity="0.500000"
+				spotAngle="180.000000"
+				spotExponent="0.000000"
+				shadow="false" />
+		</Light>
+		<Group name="Lights">
+			<active value="true" />
+			<transform 
+				position="0.000000 0.000000 0.000000"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+		</Group>
 
 	</Scene>
 

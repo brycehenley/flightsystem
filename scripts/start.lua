@@ -15,7 +15,6 @@ landmass = getObject("Entity1")
 obuilding = getObject("obuilding")
 dome = getObject("dome")
 controlsText = getObject("Text")
-skybox = getObject("skybox")
 Eship0 = getObject("Eship0")
 Eship1 = getObject("Eship1")
 Eship2 = getObject("Eship2")
@@ -65,10 +64,8 @@ setGravity({0.0, 0.0, 0.0})
 hideCursor()
 centerCursor()
 
-
 mx = getAxis("MOUSE_X") 
-my = getAxis("MOUSE_Y") 
-
+my = getAxis("MOUSE_Y")
 
 setText(controlsText, "W to accelerate | S to brake | A&D to roll | Mouse for pitch and yaw; or press tab or dpad-down to enable gamepad")
 setTextColor(controlsText, {255, 0, 127, 255})

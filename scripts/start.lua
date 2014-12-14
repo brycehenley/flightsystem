@@ -94,7 +94,7 @@ end
 
 function handleKeys()
 	if isKeyPressed("W") then
-		addCentralForce(ship, {3000.0, 0.0, 0.0}, "local")
+		addCentralForce(ship, {500.0, 0.0, 50.0}, "local")
 	end
 	if isKeyPressed("A") then
 		rotate(ship, {-1.0, 0.0, 0.0}, 0.75, "local") 
@@ -106,7 +106,7 @@ function handleKeys()
 	end
 	
 	if isKeyPressed("S") then
-		addCentralForce(ship, {-300.0, 0.0, 0.0}, "local")
+		addCentralForce(ship, {-200.0, 0.0, -50.0}, "local")
 	end
 	if isKeyPressed("BACKSPACE") then
 		menu()
@@ -207,13 +207,13 @@ function onSceneUpdate()
  
 	---- ambient forces
 
-		addCentralForce(ship, {550.0, 0.0, 0.0}, "local")
+		addCentralForce(ship, {300.0, 0.0, 0.0}, "local")
 
-		addCentralForce(Eship0, {0.0, -550.0, 0.0}, "local")
+		addCentralForce(Eship0, {0.0, -300.0, 0.0}, "local")
 
-		addCentralForce(Eship1, {0.0, -550.0, 0.0}, "local")
+		addCentralForce(Eship1, {0.0, -300.0, 0.0}, "local")
 
-		addCentralForce(Eship2, {0.0, -550.0, 0.0}, "local")
+		addCentralForce(Eship2, {0.0, -300.0, 0.0}, "local")
 
 
 

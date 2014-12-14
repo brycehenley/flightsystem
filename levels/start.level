@@ -15,10 +15,10 @@
 		<Light name="Light0">
 			<active value="true" />
 			<transform 
-				parent="heart1"
-				position="-0.752939 1.911536 4.219482"
+				parent="heart0"
+				position="0.369904 1.929116 4.214111"
 				rotation="-90.000000 90.000000 0.000000"
-				scale="0.666667 0.666667 0.666667" />
+				scale="0.500000 0.500000 0.500000" />
 			<properties 
 				radius="50.000000"
 				color="1.000000 1.000000 1.000000"
@@ -33,7 +33,7 @@
 				parent="Entity0"
 				position="-0.791107 0.000000 2.013201"
 				rotation="0.000000 -0.000000 0.000000"
-				scale="0.200000 0.200000 0.200000" />
+				scale="0.100000 0.100000 0.100000" />
 			<properties 
 				radius="80.000000"
 				color="1.000000 1.000000 1.000000"
@@ -87,6 +87,21 @@
 				spotExponent="0.000000"
 				shadow="false" />
 		</Light>
+		<Light name="Light2121">
+			<active value="true" />
+			<transform 
+				parent="Lights"
+				position="-401.995178 -1111.148682 211.166306"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				radius="3000.000000"
+				color="1.000000 1.000000 1.000000"
+				intensity="0.500000"
+				spotAngle="180.000000"
+				spotExponent="0.000000"
+				shadow="false" />
+		</Light>
 		<Camera name="Camera0">
 			<active value="true" />
 			<transform 
@@ -96,13 +111,13 @@
 				scale="1.000000 1.000000 1.000000" />
 			<properties 
 				clearColor="0.200000 0.300000 0.400000"
-				fogColor="1.000000 1.000000 1.000000"
+				fogColor="0.792793 0.792793 0.792793"
 				ortho="false"
 				fov="60.000000"
 				clippingNear="1.000000"
-				clippingFar="100000.000000"
-				fog="false"
-				fogDistance="0.000000"
+				clippingFar="10000.000000"
+				fog="true"
+				fogDistance="1000.000000"
 				skyboxTextures="maps/sky/" />
 			<Behavior name="LookAt">
 				<properties 
@@ -115,7 +130,7 @@
 				parent="Entity0"
 				position="0.000000 0.000000 0.000000"
 				rotation="0.000000 -0.000000 0.000000"
-				scale="0.200000 0.200000 0.200000" />
+				scale="0.100000 0.100000 0.100000" />
 			<properties 
 				loop="true"
 				pitch="1.000000"
@@ -131,13 +146,13 @@
 			<transform 
 				position="-1428.780029 0.000000 0.000000"
 				rotation="0.000000 -0.000000 0.000000"
-				scale="1.000000 1.000000 1.000000" />
+				scale="5.000000 5.000000 5.000000" />
 			<properties 
 				invisible="false"
 				shadow="true"
 				occluder="false" />
 			<physics 
-				shape="Box"
+				shape="Capsule"
 				ghost="false"
 				mass="1000.000000"
 				friction="0.100000"
@@ -203,9 +218,9 @@
 			<anim id="0" />
 			<active value="true" />
 			<transform 
-				position="-1436.779907 0.000000 0.750000"
+				position="-1468.780029 0.000000 3.750000"
 				rotation="0.000000 4.083245 0.000000"
-				scale="0.200000 0.200000 0.200000" />
+				scale="1.000000 1.000000 1.000000" />
 			<properties 
 				invisible="true"
 				shadow="true"
@@ -213,7 +228,7 @@
 			<Behavior name="Follow">
 				<properties 
 					target="Entity0"
-					delay="3.000000"
+					delay="2.000000"
 					offset="-8.000000 0.000000 0.750000"
 					local="true" />
 			</Behavior>
@@ -223,9 +238,9 @@
 			<anim id="0" />
 			<active value="true" />
 			<transform 
-				position="-1423.280029 2.750000 -0.850000"
+				position="-1401.280029 13.750000 -4.250000"
 				rotation="0.000000 -0.000000 0.000000"
-				scale="0.200000 0.200000 0.200000" />
+				scale="0.500000 0.500000 0.500000" />
 			<properties 
 				invisible="true"
 				shadow="true"
@@ -243,9 +258,9 @@
 			<anim id="0" />
 			<active value="true" />
 			<transform 
-				position="-1423.280029 -2.750000 -0.850000"
+				position="-1401.280029 -13.750000 -4.250000"
 				rotation="0.000000 -0.000000 0.000000"
-				scale="0.200000 0.200000 0.200000" />
+				scale="0.500000 0.500000 0.500000" />
 			<properties 
 				invisible="true"
 				shadow="true"
@@ -263,9 +278,9 @@
 			<anim id="0" />
 			<active value="true" />
 			<transform 
-				position="-1418.780029 2.750000 -0.850000"
+				position="-1378.780029 13.750000 -4.250000"
 				rotation="0.000000 -0.000000 0.000000"
-				scale="0.200000 0.200000 0.200000" />
+				scale="0.500000 0.500000 0.500000" />
 			<properties 
 				invisible="true"
 				shadow="true"
@@ -283,9 +298,9 @@
 			<anim id="0" />
 			<active value="true" />
 			<transform 
-				position="-1418.780029 -2.750000 -0.850000"
+				position="-1378.780029 -13.750000 -4.250000"
 				rotation="0.000000 -0.000000 0.000000"
-				scale="0.200000 0.200000 0.200000" />
+				scale="0.500000 0.500000 0.500000" />
 			<properties 
 				invisible="true"
 				shadow="true"
@@ -468,6 +483,29 @@
 				angularFactor="1.000000"
 				linearFactor="1.000000 1.000000 1.000000" />
 		</Entity>
+		<Entity name="hangerbeam" file="../meshs/hangerbeam.mesh">
+			<BoundingBox min="-0.483143 -3.275048 7.588406" max="0.168593 2.268606 7.794132" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="17.407837 28.930000 -738.113220"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="80.000000 80.000000 80.000000" />
+			<properties 
+				invisible="false"
+				shadow="true"
+				occluder="false" />
+			<physics 
+				shape="TriangleMesh"
+				ghost="false"
+				mass="0.000000"
+				friction="0.500000"
+				restitution="0.000000"
+				linearDamping="0.010000"
+				angularDamping="0.010000"
+				angularFactor="1.000000"
+				linearFactor="1.000000 1.000000 1.000000" />
+		</Entity>
 		<Text name="Text" file="../fonts/philosopher/Philosopher-Regular.ttf">
 			<active value="true" />
 			<transform 
@@ -483,21 +521,6 @@
 				<![CDATA[Text]]>
 			</textData>
 		</Text>
-		<Light name="Light2121">
-			<active value="true" />
-			<transform 
-				parent="Lights"
-				position="-401.995178 -1111.148682 211.166306"
-				rotation="0.000000 -0.000000 0.000000"
-				scale="1.000000 1.000000 1.000000" />
-			<properties 
-				radius="3000.000000"
-				color="1.000000 1.000000 1.000000"
-				intensity="0.500000"
-				spotAngle="180.000000"
-				spotExponent="0.000000"
-				shadow="false" />
-		</Light>
 		<Group name="Lights">
 			<active value="true" />
 			<transform 
@@ -505,6 +528,19 @@
 				rotation="0.000000 -0.000000 0.000000"
 				scale="1.000000 1.000000 1.000000" />
 		</Group>
+		<Entity name="Entity2" file="../meshs/hyperion.mesh">
+			<BoundingBox min="-4.601186 -3.222627 -1.111340" max="5.330950 3.222627 0.349742" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="5.036665 -205.870041 -246.853806"
+				rotation="0.000000 -0.000000 -176.532471"
+				scale="5.000000 5.000000 5.000000" />
+			<properties 
+				invisible="true"
+				shadow="true"
+				occluder="false" />
+		</Entity>
 
 	</Scene>
 

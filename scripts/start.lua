@@ -94,7 +94,8 @@ end
 
 function handleKeys()
 	if isKeyPressed("W") then
-		addCentralForce(ship, {500.0, 0.0, 50.0}, "local")
+		addCentralForce(ship, {700.0, 0.0, 0.0}, "local")
+		addCentralForce(ship, {0.0, 0.0, 100.0}, "global")
 	end
 	if isKeyPressed("A") then
 		rotate(ship, {-1.0, 0.0, 0.0}, 0.75, "local") 
@@ -106,7 +107,8 @@ function handleKeys()
 	end
 	
 	if isKeyPressed("S") then
-		addCentralForce(ship, {-200.0, 0.0, -50.0}, "local")
+		addCentralForce(ship, {-200.0, 0.0, 0.0}, "local")
+		addCentralForce(ship, {0.0, 0.0, -100.0}, "global")
 	end
 	if isKeyPressed("BACKSPACE") then
 		menu()
@@ -125,10 +127,7 @@ function handleKeys()
 	
 	if gamepad then
 		if isKeyPressed("JOY1_BUTTON_RIGHTSTICK") then
-			addCentralForce(ship, {3000.0, 0.0, 0.0}, "local")
-		end
-		if isKeyPressed("JOY1_BUTTON_LEFTSHOULDER") then
-			addCentralForce(ship, {-300.0, 0.0, 0.0}, "local")
+			addCentralForce(ship, {500.0, 0.0, 0.0}, "local")
 		end
 		if isKeyPressed("JOY1_BUTTON_Y") then
 			menu()
@@ -243,7 +242,7 @@ function onSceneUpdate()
 	if keyboard then
 		if onKeyDown("MOUSE_BUTTON_LEFT") then 
 
-			addCentralForce(ship, {-1000.0, 0.0, 0.0}, "local")
+			addCentralForce(ship, {-500.0, 0.0, 0.0}, "local")
 
 			endpos0[1] = startpos0[1] + (endpos0[1] - startpos0[1])*1000
 			endpos0[2] = startpos0[2] + (endpos0[2] - startpos0[2])*1000
@@ -327,7 +326,7 @@ function onSceneUpdate()
 	if gamepad then
 		if onKeyDown("JOY1_BUTTON_LEFTSHOULDER") then 
 
-			addCentralForce(ship, {-1000.0, 0.0, 0.0}, "local")
+			addCentralForce(ship, {-500.0, 0.0, 0.0}, "local")
 
 			endpos0[1] = startpos0[1] + (endpos0[1] - startpos0[1])*1000
 			endpos0[2] = startpos0[2] + (endpos0[2] - startpos0[2])*1000

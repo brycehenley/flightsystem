@@ -3109,7 +3109,7 @@
 			<index value="374" />
 		</Indices>
 		<Displays num="1">
-			<display primType="triangles" begin="0" size="2304" material="1" cullFace="0" />
+			<display primType="triangles" begin="0" size="2304" material="0" cullFace="2" />
 		</Displays>
 	</SubMesh>
 	<SubMesh id="1">
@@ -6193,7 +6193,7 @@
 			<index value="374" />
 		</Indices>
 		<Displays num="1">
-			<display primType="triangles" begin="0" size="2304" material="0" cullFace="0" />
+			<display primType="triangles" begin="0" size="2304" material="1" cullFace="2" />
 		</Displays>
 	</SubMesh>
 </SubMeshs>

@@ -83,34 +83,6 @@
 				<![CDATA[Text]]>
 			</textData>
 		</Text>
-		<Text name="Text1" file="../fonts/philosopher/Philosopher-Bold.ttf">
-			<active value="true" />
-			<transform 
-				position="-55.680294 -3.029236 -0.998169"
-				rotation="180.000000 0.000000 0.000000"
-				scale="1.000000 1.000000 1.000000" />
-			<properties 
-				size="5.000000"
-				align="Left"
-				color="1.000000 1.000000 1.000000 1.000000" />
-			<textData>
-				<![CDATA[Text]]>
-			</textData>
-		</Text>
-		<Text name="Text2" file="../fonts/philosopher/Philosopher-Bold.ttf">
-			<active value="true" />
-			<transform 
-				position="-55.680294 -11.145561 -0.998169"
-				rotation="180.000000 0.000000 0.000000"
-				scale="1.000000 1.000000 1.000000" />
-			<properties 
-				size="5.000000"
-				align="Left"
-				color="1.000000 1.000000 1.000000 1.000000" />
-			<textData>
-				<![CDATA[Text]]>
-			</textData>
-		</Text>
 
 	</Scene>
 

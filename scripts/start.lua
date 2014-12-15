@@ -195,13 +195,13 @@ function onSceneUpdate()
 
 		-------
 		-- rotate camera (X mouse)
-		rotate(cambody, {0.0, 0.0, -1.0}, dx*150.0, "local")
+		rotate(cambody, {0.0, 0.0, -1.0}, dx*100.0, "local")
 		-- rotate camera (Y mouse)
-		rotate(cambody, {0.0, -1.0, 0.0}, dy*150.0, "local")
+		rotate(cambody, {0.0, -1.0, 0.0}, dy*100.0, "local")
 		-- rotate Ship (X mouse)
-		rotate(ship, {0.0, 0.0, -1.0}, dx*150.0, "local")	
+		rotate(ship, {0.0, 0.0, -1.0}, dx*100.0, "local")	
 		-- rotate Ship (Y mouse)
-		rotate(ship, {0.0, -1.0, 0.0}, dy*150.0, "local")	
+		rotate(ship, {0.0, -1.0, 0.0}, dy*100.0, "local")	
 		
  
 	---- ambient forces
@@ -222,11 +222,6 @@ function onSceneUpdate()
 	dy = getAxis("MOUSE_Y") - my 
 
 	centerCursor()
-
-		
-		addCentralForce(ship, {0.0, dx * 0.5, 0.0}, "local")
-		addCentralForce(ship, {0.0, 0.0, dy * 0.5}, "local")
-
 
 		mx = getAxis("MOUSE_X") 
 		my = getAxis("MOUSE_Y") 

@@ -8,12 +8,9 @@ scale = getWindowScale()
 width = scale[1]
 height = scale[2]
 
-setText(menuheadertext , "Skyland") 
-setText(menubodytext , "press Space or Start to begin")
-setText(menusubbodytext , "press Escape to exit") 
+setText(menuheadertext , "Skyland")
 
-deactivate(menubodytext)
-deactivate(menusubbodytext)
+showCursor()
 
 ------ menu buttons
 	function button1Callback()
@@ -40,6 +37,7 @@ deactivate(menusubbodytext)
 	addWidgetToCanvas(mainCanvas, button3)
 
 function onSceneUpdate()
+	showCursor()
 
 	rotate(logo, {0, 0, 1}, .5, "local")
 

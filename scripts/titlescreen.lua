@@ -1,6 +1,4 @@
 menuheadertext = getObject("Text0")
-menubodytext = getObject("Text1")
-menusubbodytext = getObject("Text2")
 background = getObject("Entity1")
 logo = getObject("Entity0")
 

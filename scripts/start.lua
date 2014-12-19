@@ -1,7 +1,8 @@
 Main = getScene("Scene-1")
 Camera = getObject("Camera0")
 
-enableGui(0)
+enableGui(1)
+mainCanvas = getMainCanvas()
 
 debug = false
 gamepad = false
@@ -14,10 +15,19 @@ ship = getObject("Entity0")
 landmass = getObject("Entity1")
 obuilding = getObject("obuilding")
 dome = getObject("dome")
-controlsText = getObject("Text")
+
 Eship0 = getObject("Eship0")
 Eship1 = getObject("Eship1")
 Eship2 = getObject("Eship2")
+
+Elaser0 = getObject("Elaser0")
+Ehitend0 = getObject("Ehitend0")
+Ehitend0 = getObject("Ehitend0")
+
+EcloneList = {}
+EcubecloneList0 = {}
+Eapoint = {}
+Eshots = 0
 
 hitstart0 = getObject("hitstart0")
 hitstart1 = getObject("hitstart1")
@@ -67,8 +77,6 @@ centerCursor()
 mx = getAxis("MOUSE_X") 
 my = getAxis("MOUSE_Y")
 
-setText(controlsText, "W to accelerate | S to brake | A&D to roll | Mouse for pitch and yaw; or press tab or dpad-down to enable gamepad")
-setTextColor(controlsText, {255, 0, 127, 255})
 --------
 function time()
 	sec = sec + 1
@@ -86,11 +94,6 @@ end
 function gameover()
 	loadLevel("levels/gameover.level")
 end
-
---function land()
---	shipcollision = false
---	wait()
---end
 
 function handleKeys()
 	if isKeyPressed("W") then
@@ -120,6 +123,10 @@ function handleKeys()
 	--	land()
 	--end
 
+	-- disable tutorial text
+	if isKeyPressed("ENTER") then
+		destroyWidget(button1)
+	end
 	if isKeyPressed("TAB") then
 		gamepad = true
 		keyboard = false
@@ -135,11 +142,25 @@ function handleKeys()
 	end
 end
 
+-- GUI
+
+	function button1Callback()
+		
+	end
+
+	button1 = createButton(100,100,1000,35, "W to accelerate, S to brake, A&D to roll, Mouse for pitch and yaw;\n\n press tab or dpad-down to enable gamepad", "button1Callback")
+	addWidgetToCanvas(mainCanvas, button1)
+
+	setNormalBackground({0.0,0.0,0.0,0.0})
+	setHoverBackground({0.0,0.0,0.0,0.0})
 
 -- scene update
 function onSceneUpdate()
 	--tracks time
 	time()
+
+
+	-- W to accelerate | S to brake | A&D to roll | Mouse for pitch and yaw; or press tab or dpad-down to enable gamepad
 
 	--Ship crash handeling
 	if shipcollision then
@@ -411,6 +432,72 @@ function onSceneUpdate()
 
 	Eship2pos = getPosition(Eship2)
 	shippos = getPosition(ship)
+
+	if Eship2pos[2] > shippos[2] then
+		-- rotate X axis
+		rotate(Eship2, {0.0, 0.0, -1.0}, 0.5, "local")		
+	end
+	if Eship2pos[2] < shippos[2] then
+		-- rotate X axis
+		rotate(Eship2, {0.0, 0.0, 1.0}, 0.5, "local")		
+	end  
+	-- if Eship2pos[3] > shippos[3] then
+	-- 	rotate(Eship2, {0.0, -1.0, 0.0}, 1.0, "local")
+	-- end
+	-- if Eship2pos[3] < shippos[3] then
+	-- 	rotate(Eship2, {0.0, -1.0, 0.0}, 1.0, "local")
+	-- end
+
+	--hit detection vars
+	Estartpos0 = getPosition(Ehitstart0)
+	Eendpos0 = getPosition(Ehitend0)
+
+	if onKeyDown("MOUSE_BUTTON_LEFT") then 
+
+			-- -- addCentralForce(Eship2, {-500.0, 0.0, 0.0}, "local")
+
+			-- Eendpos0[1] = Estartpos0[1] + (Eendpos0[1] - Estartpos0[1])*1000
+			-- Eendpos0[2] = Estartpos0[2] + (Eendpos0[2] - Estartpos0[2])*1000
+			-- Eendpos0[3] = Estartpos0[3] + (Eendpos0[3] - Estartpos0[3])*1000
+
+	        
+	        Eshots = Eshots + 1 --number of shots taken
+
+			-- Epoint0, Eobject0 = rayHit(Estartpos0, Eendpos0)
+	    	
+	  --   	if Epoint0 then
+
+		 --        	if getName(Eobject0) == "ship" then
+		 --        		shipcollisionnumber = shipcollisionnumber + 1
+		 --        	end
+		 --        	if getName(Eobject0) == "Eship1" then
+		 --        		Eship1collisionnumber = Eship1collisionnumber + 1
+		 --        	end
+		 --        	if getName(Eobject0) == "Eship3" then
+		 --        		Eship3collisionnumber = Eship3collisionnumber + 1
+		 --        	end
+
+	  --       		-- table.insert(EcubecloneList0, #EcubecloneList0 + 1, getClone(testcube))
+	  --       		-- table.insert(Eapoint, #Eapoint + 1, Epoint0)
+
+	  --  		end
+	        
+
+	  --       table.insert(EcloneList, #EcloneList + 1, getClone(Elaser0)) -- create a clone 
+	    	
+	  --   	-- for i=1, #EcubecloneList0 do
+	  --   	-- 	setPosition(EcubecloneList0[i], Eapoint[i])
+	  --   	-- end
+
+			-- for i=1, #EcloneList do
+		    	
+		 --    	setParent(EcloneList[i], 0)
+
+			-- 	translate(EcloneList[i], {0.0, 50.0, 0.0}, "local")
+
+			-- end
+	end
+
 
 	if Eship1collisionnumber >= 4 then
 		deactivate(Eship0)

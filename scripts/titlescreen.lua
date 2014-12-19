@@ -12,6 +12,10 @@ showCursor()
 
 ------ menu buttons
 	function button1Callback()
+		destroyWidget(button1)
+		destroyWidget(button2)		
+		destroyWidget(button3)
+
 		loadLevel("levels/start.level")
 	end
 
@@ -29,6 +33,9 @@ showCursor()
 	button1 = createButton(200,400,250,35, "Start", "button1Callback")
 	button2 = createButton(200,455,250,35,"Settings", "button2Callback")
 	button3 = createButton(200,510,250,35, "Quit", "button3Callback")
+
+	setNormalBackground({0.5,0.5,0.5,0.3})
+	setHoverBackground({0.7,0.7,0.7,0.3})
 
 	addWidgetToCanvas(mainCanvas, button1)
 	addWidgetToCanvas(mainCanvas, button2)

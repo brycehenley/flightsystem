@@ -21,3 +21,9 @@ https://github.com/Sponk/NeoEditor/tree/development
 Credits:
 	SOFTWARE
 	Neo3d http://www.neo-engine.de/
+
+	MUSIC
+	Alexandr Zhelanov http://opengameart.org/users/alexandr-zhelanov
+
+	Test Skybox Texture
+	Jockum Skoglund http://opengameart.org/users/arikel

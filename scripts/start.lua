@@ -20,15 +20,6 @@ Eship0 = getObject("Eship0")
 Eship1 = getObject("Eship1")
 Eship2 = getObject("Eship2")
 
-Elaser0 = getObject("Elaser0")
-Ehitend0 = getObject("Ehitend0")
-Ehitend0 = getObject("Ehitend0")
-
-EcloneList = {}
-EcubecloneList0 = {}
-Eapoint = {}
-Eshots = 0
-
 hitstart0 = getObject("hitstart0")
 hitstart1 = getObject("hitstart1")
 hitend0 = getObject("hitend0")
@@ -45,6 +36,12 @@ testcube = getObject("testcube")
 
 rainsound = getObject("Sound0")
 
+sound = true
+
+if sound then
+	playSound(rainsound) 
+end
+
 cloneList = {}
 subcloneList = {}
 cubecloneList0 = {}
@@ -58,6 +55,7 @@ dy = 0.0 -- change in mouse y-axis since last update
 dz = 0.0
 dw = 0.0
 
+tick = 0
 sec = 0
 min = 0
 
@@ -78,14 +76,7 @@ mx = getAxis("MOUSE_X")
 my = getAxis("MOUSE_Y")
 
 --------
-function time()
-	sec = sec + 1
 
-	if sec == 60 then
-		min = min + 1
-		sec = 0
-	end
-end
 
 function menu()
 	quit()
@@ -123,8 +114,8 @@ function handleKeys()
 	--	land()
 	--end
 
-	-- disable tutorial text
-	if isKeyPressed("ENTER") then
+	-- clear notifications
+	if isKeyPressed("C") then
 		destroyWidget(button1)
 	end
 	if isKeyPressed("TAB") then
@@ -148,19 +139,15 @@ end
 		
 	end
 
-	button1 = createButton(100,100,1000,35, "W to accelerate, S to brake, A&D to roll, Mouse for pitch and yaw;\n\n press tab or dpad-down to enable gamepad", "button1Callback")
+	button1 = createButton(100,100,1000,0, "W to accelerate, S to brake, A&D to roll, Mouse for pitch and yaw;\n\n press tab or dpad-down to enable gamepad", "button1Callback")
 	addWidgetToCanvas(mainCanvas, button1)
-
-	setNormalBackground({0.0,0.0,0.0,0.0})
-	setHoverBackground({0.0,0.0,0.0,0.0})
 
 -- scene update
 function onSceneUpdate()
-	--tracks time
-	time()
-
-
-	-- W to accelerate | S to brake | A&D to roll | Mouse for pitch and yaw; or press tab or dpad-down to enable gamepad
+	-- Time
+	tick = getSystemTick()
+	sec = tick/1000
+	min = sec/60
 
 	--Ship crash handeling
 	if shipcollision then
@@ -278,13 +265,13 @@ function onSceneUpdate()
 	        		print(getName(object0))
 	        	end
 		        	
-		        	if getName(object1) == "Eship0" then
+		        	if getName(object0) == "Eship0" then
 		        		Eship1collisionnumber = Eship1collisionnumber + 1
 		        	end
-		        	if getName(object1) == "Eship1" then
+		        	if getName(object0) == "Eship1" then
 		        		Eship2collisionnumber = Eship2collisionnumber + 1
 		        	end
-		        	if getName(object1) == "Eship2" then
+		        	if getName(object0) == "Eship2" then
 		        		Eship3collisionnumber = Eship3collisionnumber + 1
 		        	end
 
@@ -362,13 +349,13 @@ function onSceneUpdate()
 	        		print(getName(object0))
 	        	end
 		        	
-		        	if getName(object1) == "Eship0" then
+		        	if getName(object0) == "Eship0" then
 		        		Eship1collisionnumber = Eship1collisionnumber + 1
 		        	end
-		        	if getName(object1) == "Eship1" then
+		        	if getName(object0) == "Eship1" then
 		        		Eship2collisionnumber = Eship2collisionnumber + 1
 		        	end
-		        	if getName(object1) == "Eship2" then
+		        	if getName(object0) == "Eship2" then
 		        		Eship3collisionnumber = Eship3collisionnumber + 1
 		        	end
 
@@ -429,76 +416,6 @@ function onSceneUpdate()
 ------------------------------------
 	--Aircraft AI and collision
 
-
-	Eship2pos = getPosition(Eship2)
-	shippos = getPosition(ship)
-
-	if Eship2pos[2] > shippos[2] then
-		-- rotate X axis
-		rotate(Eship2, {0.0, 0.0, -1.0}, 0.5, "local")		
-	end
-	if Eship2pos[2] < shippos[2] then
-		-- rotate X axis
-		rotate(Eship2, {0.0, 0.0, 1.0}, 0.5, "local")		
-	end  
-	-- if Eship2pos[3] > shippos[3] then
-	-- 	rotate(Eship2, {0.0, -1.0, 0.0}, 1.0, "local")
-	-- end
-	-- if Eship2pos[3] < shippos[3] then
-	-- 	rotate(Eship2, {0.0, -1.0, 0.0}, 1.0, "local")
-	-- end
-
-	--hit detection vars
-	Estartpos0 = getPosition(Ehitstart0)
-	Eendpos0 = getPosition(Ehitend0)
-
-	if onKeyDown("MOUSE_BUTTON_LEFT") then 
-
-			-- -- addCentralForce(Eship2, {-500.0, 0.0, 0.0}, "local")
-
-			-- Eendpos0[1] = Estartpos0[1] + (Eendpos0[1] - Estartpos0[1])*1000
-			-- Eendpos0[2] = Estartpos0[2] + (Eendpos0[2] - Estartpos0[2])*1000
-			-- Eendpos0[3] = Estartpos0[3] + (Eendpos0[3] - Estartpos0[3])*1000
-
-	        
-	        Eshots = Eshots + 1 --number of shots taken
-
-			-- Epoint0, Eobject0 = rayHit(Estartpos0, Eendpos0)
-	    	
-	  --   	if Epoint0 then
-
-		 --        	if getName(Eobject0) == "ship" then
-		 --        		shipcollisionnumber = shipcollisionnumber + 1
-		 --        	end
-		 --        	if getName(Eobject0) == "Eship1" then
-		 --        		Eship1collisionnumber = Eship1collisionnumber + 1
-		 --        	end
-		 --        	if getName(Eobject0) == "Eship3" then
-		 --        		Eship3collisionnumber = Eship3collisionnumber + 1
-		 --        	end
-
-	  --       		-- table.insert(EcubecloneList0, #EcubecloneList0 + 1, getClone(testcube))
-	  --       		-- table.insert(Eapoint, #Eapoint + 1, Epoint0)
-
-	  --  		end
-	        
-
-	  --       table.insert(EcloneList, #EcloneList + 1, getClone(Elaser0)) -- create a clone 
-	    	
-	  --   	-- for i=1, #EcubecloneList0 do
-	  --   	-- 	setPosition(EcubecloneList0[i], Eapoint[i])
-	  --   	-- end
-
-			-- for i=1, #EcloneList do
-		    	
-		 --    	setParent(EcloneList[i], 0)
-
-			-- 	translate(EcloneList[i], {0.0, 50.0, 0.0}, "local")
-
-			-- end
-	end
-
-
 	if Eship1collisionnumber >= 4 then
 		deactivate(Eship0)
 	end
@@ -507,6 +424,7 @@ function onSceneUpdate()
 	end
 	if Eship3collisionnumber >= 4 then
 		deactivate(Eship2)
+		deactivate(Elaser0)
 	end
 	
 end

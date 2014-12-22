@@ -1,0 +1,51 @@
+<Maratis>
+
+<Mesh>
+
+<Materials num="1">
+	<Material id="0" type="1">
+		<blend type="0" />
+		<opacity value="1.000000" />
+		<shininess value="50.000000" />
+		<customValue value="0.000000" />
+		<diffuseColor r="0.800000" g="0.800000" b="0.800000" />
+		<specularColor r="0.500000" g="0.500000" b="0.500000" />
+		<emitColor r="0.000000" g="0.000000" b="0.000000" />
+		<customColor r="0.000000" g="0.000000" b="0.000000" />
+	</Material>
+</Materials>
+
+<BoundingBox minx="-1.067791" miny="3.589881" minz="5.869769" maxx="1.029373" maxy="4.743718" maxz="5.869769" />
+
+<SubMeshs num="1">
+	<SubMesh id="0">
+		<BoundingBox minx="-1.067791" miny="3.589881" minz="5.869769" maxx="1.029373" maxy="4.743718" maxz="5.869769" />
+		<Vertices num="4">
+			<vertex x="-1.067791" y="3.888117" z="5.869769" />
+			<vertex x="-0.938096" y="3.589881" z="5.869769" />
+			<vertex x="1.029373" y="4.445482" z="5.869769" />
+			<vertex x="0.899678" y="4.743718" z="5.869769" />
+		</Vertices>
+		<Normals num="4">
+			<normal x="0.000000" y="0.000000" z="1.000000" />
+			<normal x="0.000000" y="0.000000" z="1.000000" />
+			<normal x="0.000000" y="0.000000" z="0.999969" />
+			<normal x="0.000000" y="0.000000" z="1.000000" />
+		</Normals>
+		<Indices num="6">
+			<index value="0" />
+			<index value="1" />
+			<index value="2" />
+			<index value="2" />
+			<index value="3" />
+			<index value="0" />
+		</Indices>
+		<Displays num="1">
+			<display primType="triangles" begin="0" size="6" material="0" cullFace="0" />
+		</Displays>
+	</SubMesh>
+</SubMeshs>
+
+</Mesh>
+
+</Maratis>

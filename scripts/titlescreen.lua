@@ -108,7 +108,7 @@ function onSceneUpdate()
 	if isKeyPressed("SPACE") then
 		loadLevel("levels/start.level")
 	end
-	if isKeyPressed("JOY1_BUTTON_Y") then
+	if isKeyPressed("JOY1_BUTTON_A") then
 		loadLevel("levels/start.level")
 	end
 

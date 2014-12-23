@@ -118,16 +118,16 @@ function handleKeys()
 	if isKeyPressed("C") then
 		destroyWidget(button1)
 	end
+	if isKeyPressed("JOY1_BUTTON_A") then
+		destroyWidget(button1)
+	end
 	if isKeyPressed("TAB") then
 		gamepad = true
 		keyboard = false
 	end
 	
 	if gamepad then
-		if isKeyPressed("JOY1_BUTTON_RIGHTSTICK") then
-			addCentralForce(ship, {500.0, 0.0, 0.0}, "local")
-		end
-		if isKeyPressed("JOY1_BUTTON_Y") then
+		if isKeyPressed("JOY1_BUTTON_START") then
 			menu()
 		end
 	end
@@ -184,12 +184,22 @@ function onSceneUpdate()
 		dz = getAxis("JOY1_AXIS_RIGHTX")
 		dw = getAxis("JOY1_AXIS_RIGHTY")
 
-		if dl > -0.2 and dl < 0.2 then dl = 0.0 end
-		if dm > -0.2 and dm < 0.2 then dm = 0.0 end
+		if dl > -0.1 and dl < 0.1 then dl = 0.0 end
+		if dm > -0.1 and dm < 0.1 then dm = 0.0 end
 		-- yaw
-		if dz > -0.2 and dz < 0.2 then dz = 0.0 end
+		if dz > -0.1 and dz < 0.1 then dz = 0.0 end
 		-- pitch
-		if dw > -0.2 and dw < 0.2 then dw = 0.0 end
+		if dw > -0.1 and dw < 0.1 then dw = 0.0 end
+
+		--joystick accel
+		if dm >= 0.25 then
+			addCentralForce(ship, {-200.0, 0.0, 0.0}, "local")
+			addCentralForce(ship, {0.0, 0.0, -100.0}, "global")
+		elseif dm <= -0.25 then
+			addCentralForce(ship, {700.0, 0.0, 0.0}, "local")
+			addCentralForce(ship, {0.0, 0.0, 100.0}, "global")
+
+		end
 
 		rotate(ship, {1.0, 0.0, 0.0}, dl*1.25, "local")
 		rotate(cambody, {1.0, 0.0, 0.0}, dl*1.25, "local")
@@ -327,7 +337,7 @@ function onSceneUpdate()
 
 
 	if gamepad then
-		if onKeyDown("JOY1_BUTTON_LEFTSHOULDER") then 
+		if onKeyDown("JOY1_BUTTON_GUIDE") then 
 
 			addCentralForce(ship, {-500.0, 0.0, 0.0}, "local")
 

@@ -1,0 +1,19 @@
+Log tracked at level :6
+[ Info ] Neo Player version:	v0.4 in main in main.cpp
+[ Info ] Renderer: 4.4.0 NVIDIA 331.113 in StandardRenderer in StandardRenderer.cpp
+[ Info ] Renderer: 4.4.0 NVIDIA 331.113 in StandardRenderer in StandardRenderer.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MeshLoad.cpp
+[ Error ] Load Vorbis : input does not appear to be an ogg vorbis bitstream in M_loadVorbisSound in VorbisLoader.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MeshLoad.cpp
+[ Warn ] TiXmlDocument load failed : Failed to open file line 0 in xmlMeshLoad in MeshLoad.cpp

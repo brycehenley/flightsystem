@@ -106,10 +106,10 @@ function onSceneUpdate()
 	rotate(logo, {0, 0, 1}, .5, "local")
 
 	if isKeyPressed("SPACE") then
-		loadLevel("levels/start.level")
+		button1Callback()
 	end
 	if isKeyPressed("JOY1_BUTTON_A") then
-		loadLevel("levels/start.level")
+		button1Callback()
 	end
 
 	if isKeyPressed("ESCAPE") then

@@ -11,6 +11,8 @@ keyboard = true
 -- get objects
 camera = getObject("Camera0")
 cambody = getObject("Entity3")
+Lightspot1 = getObject("Lightspot1")
+Lightspot2 = getObject("Lightspot2")
 ship = getObject("Entity0")
 landmass = getObject("Entity1")
 obuilding = getObject("obuilding")
@@ -69,6 +71,10 @@ Eship3collisionnumber = 0
 -- no global gravity, gravity is independent to each object.
 setGravity({0.0, 0.0, 0.0})
 
+--lighting quality
+setLightShadowQuality(Lightspot1, 2048)
+setLightShadowQuality(Lightspot2, 2048)
+
 hideCursor()
 centerCursor()
 
@@ -79,17 +85,19 @@ my = getAxis("MOUSE_Y")
 
 
 function menu()
+	destroyWidget(button1)
 	quit()
 end
 
 function gameover()
+	destroyWidget(button1)
 	loadLevel("levels/gameover.level")
 end
 
 function handleKeys()
 	if isKeyPressed("W") then
 		addCentralForce(ship, {700.0, 0.0, 0.0}, "local")
-		addCentralForce(ship, {0.0, 0.0, 100.0}, "global")
+		addCentralForce(ship, {0.0, 0.0, 100.0}, "local")
 	end
 	if isKeyPressed("A") then
 		rotate(ship, {-1.0, 0.0, 0.0}, 0.75, "local") 
@@ -118,10 +126,14 @@ function handleKeys()
 	if isKeyPressed("C") then
 		destroyWidget(button1)
 	end
-	if isKeyPressed("JOY1_BUTTON_A") then
+	if isKeyPressed("JOY1_BUTTON_B") then
 		destroyWidget(button1)
 	end
 	if isKeyPressed("TAB") then
+		gamepad = true
+		keyboard = false
+	end
+	if isKeyPressed("JOY1_BUTTON_A") then
 		gamepad = true
 		keyboard = false
 	end
@@ -197,7 +209,7 @@ function onSceneUpdate()
 			addCentralForce(ship, {0.0, 0.0, -100.0}, "global")
 		elseif dm <= -0.25 then
 			addCentralForce(ship, {700.0, 0.0, 0.0}, "local")
-			addCentralForce(ship, {0.0, 0.0, 100.0}, "global")
+			addCentralForce(ship, {0.0, 0.0, 100.0}, "local")
 
 		end
 

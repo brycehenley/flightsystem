@@ -1,8 +1,7 @@
 Log tracked at level :6
 [ Info ] Neo Player version:	v0.4 in main in main.cpp
-[ Info ] Renderer: 3.0 Mesa 10.3.0 in StandardRenderer in StandardRenderer.cpp
-[ Info ] No GL4 compatible context found. Falling back to compat shaders. in StandardRenderer in StandardRenderer.cpp
-[ Info ] Renderer: 3.0 Mesa 10.3.0 in StandardRenderer in StandardRenderer.cpp
-[ Info ] No GL4 compatible context found. Falling back to compat shaders. in StandardRenderer in StandardRenderer.cpp
+[ Info ] Renderer: 4.4.0 NVIDIA 331.113 in StandardRenderer in StandardRenderer.cpp
+[ Info ] Renderer: 4.4.0 NVIDIA 331.113 in StandardRenderer in StandardRenderer.cpp
 [ Error ] Load Vorbis : input does not appear to be an ogg vorbis bitstream in M_loadVorbisSound in VorbisLoader.cpp
+[ Error ] OpenAL : Unable to send sound data! in sendBufferSound in ALContext.cpp
 [ Info ] Update thread returned with exit code 0 in main in main.cpp

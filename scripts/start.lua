@@ -75,6 +75,10 @@ setGravity({0.0, 0.0, 0.0})
 setLightShadowQuality(Lightspot1, 2048)
 setLightShadowQuality(Lightspot2, 2048)
 
+--1337 shadows
+-- setLightShadowQuality(Lightspot1, 4096*2)
+-- setLightShadowQuality(Lightspot2, 4096*2)
+
 hideCursor()
 centerCursor()
 

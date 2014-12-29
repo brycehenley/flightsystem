@@ -5,5 +5,4 @@ Log tracked at level :6
 [ Info ] Renderer: 3.0 Mesa 10.3.0 in StandardRenderer in StandardRenderer.cpp
 [ Info ] No GL4 compatible context found. Falling back to compat shaders. in StandardRenderer in StandardRenderer.cpp
 [ Error ] Load Vorbis : input does not appear to be an ogg vorbis bitstream in M_loadVorbisSound in VorbisLoader.cpp
-[ Error ] Load Vorbis : input does not appear to be an ogg vorbis bitstream in M_loadVorbisSound in VorbisLoader.cpp
 [ Info ] Update thread returned with exit code 0 in main in main.cpp

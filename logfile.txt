@@ -1,7 +1,8 @@
 Log tracked at level :6
-[ Info ] Neo Player version:	v0.4 in main in main.cpp
-[ Info ] Renderer: 4.4.0 NVIDIA 331.113 in StandardRenderer in StandardRenderer.cpp
-[ Info ] Renderer: 4.4.0 NVIDIA 331.113 in StandardRenderer in StandardRenderer.cpp
-[ Error ] Load Vorbis : input does not appear to be an ogg vorbis bitstream in M_loadVorbisSound in VorbisLoader.cpp
-[ Error ] OpenAL : Unable to send sound data! in sendBufferSound in ALContext.cpp
+[ Info ] Renderer: 4.4.0 NVIDIA 340.29 in MStandardRenderer in MStandardRenderer.cpp
+[ Info ] Renderer: 4.4.0 NVIDIA 340.29 in MStandardRenderer in MStandardRenderer.cpp
+[ Error ] Lua Script: 
+[string "menuheadertext = getObject("Text0")..."]:57: attempt to call global 'enableGui' (a nil value)
+ in runScript in MScript.cpp
+[ Info ] Profiling enabled in main in main.cpp
 [ Info ] Update thread returned with exit code 0 in main in main.cpp

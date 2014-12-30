@@ -16,9 +16,9 @@
 			<active value="true" />
 			<transform 
 				parent="heart0"
-				position="0.369904 1.929116 4.214111"
+				position="0.739566 2.323520 3.990601"
 				rotation="-90.000000 90.000000 0.000000"
-				scale="0.500000 0.500000 0.500000" />
+				scale="1.000000 1.000000 1.000000" />
 			<properties 
 				radius="50.000000"
 				color="1.000000 1.000000 1.000000"
@@ -47,7 +47,7 @@
 			<transform 
 				parent="Lights"
 				position="-2069.545898 1660.014404 2000.000000"
-				rotation="4.999998 -50.000008 -37.000046"
+				rotation="5.000020 -50.000042 -37.000103"
 				scale="1.000000 1.000000 1.000000" />
 			<properties 
 				radius="20000.000000"
@@ -65,7 +65,7 @@
 			<transform 
 				parent="Lights"
 				position="-2069.545898 1660.014404 2000.000000"
-				rotation="23.000013 -50.000011 -80.398590"
+				rotation="23.000006 -50.000015 -80.398590"
 				scale="1.000000 1.000000 1.000000" />
 			<properties 
 				radius="20000.000000"
@@ -108,12 +108,30 @@
 				clippingNear="1.000000"
 				clippingFar="10000.000000"
 				fog="true"
-				fogDistance="1000.000000"
+				fogDistance="5000.000000"
 				skyboxTextures="maps/sky/" />
 			<Behavior name="LookAt">
 				<properties 
 					target="" />
 			</Behavior>
+		</Camera>
+		<Camera name="Camera1">
+			<active value="true" />
+			<transform 
+				parent="Entity4"
+				position="0.345343 -0.781006 0.455867"
+				rotation="90.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				clearColor="0.200000 0.300000 0.400000"
+				fogColor="0.790000 0.790000 0.790000"
+				ortho="false"
+				fov="60.000000"
+				clippingNear="1.000000"
+				clippingFar="10000.000000"
+				fog="true"
+				fogDistance="5000.000000"
+				skyboxTextures="maps/sky/" />
 		</Camera>
 		<Sound name="Sound0" file="../sounds/2523__rhumphries__rbh-thunder-storm.wav">
 			<active value="true" />
@@ -131,7 +149,7 @@
 				relative="false" />
 		</Sound>
 		<Entity name="Entity0" file="../meshs/hyperion.mesh">
-			<BoundingBox min="-4.601186 -3.222627 -1.111340" max="5.330950 3.222627 0.349742" />
+			<BoundingBox min="-4.697372 -3.222627 -1.111340" max="5.330950 3.222627 0.349742" />
 			<anim id="0" />
 			<active value="true" />
 			<transform 
@@ -154,7 +172,7 @@
 				linearFactor="1.000000 1.000000 1.000000" />
 		</Entity>
 		<Entity name="Entity1" file="../meshs/block.mesh">
-			<BoundingBox min="-14.363112 -12.326299 -9.759059" max="12.622904 10.816216 17.588278" />
+			<BoundingBox min="-14.363112 -14.049198 -9.759059" max="12.622904 10.816216 17.588278" />
 			<anim id="0" />
 			<active value="true" />
 			<transform 
@@ -214,7 +232,7 @@
 				scale="1.000000 1.000000 1.000000" />
 			<properties 
 				invisible="true"
-				shadow="true"
+				shadow="false"
 				occluder="false" />
 			<Behavior name="Follow">
 				<properties 
@@ -309,10 +327,10 @@
 			<anim id="0" />
 			<active value="true" />
 			<transform 
-				parent="Entity0"
-				position="-5.890411 1.641341 -0.801354"
-				rotation="90.000000 -0.000000 -90.000000"
-				scale="0.300000 0.300000 0.300000" />
+				parent="Entity3"
+				position="16.057129 8.500000 -7.000000"
+				rotation="94.083244 -0.000000 -90.000000"
+				scale="1.250000 1.250000 1.250000" />
 			<properties 
 				invisible="false"
 				shadow="false"
@@ -323,10 +341,10 @@
 			<anim id="0" />
 			<active value="true" />
 			<transform 
-				parent="Entity0"
-				position="-5.888824 1.304488 -0.796080"
-				rotation="90.000000 -0.000000 -90.000000"
-				scale="0.300000 0.300000 0.300000" />
+				parent="Entity3"
+				position="16.066162 7.000000 -7.000000"
+				rotation="94.083244 -0.000000 -90.000000"
+				scale="1.250000 1.250000 1.250000" />
 			<properties 
 				invisible="false"
 				shadow="false"
@@ -337,10 +355,10 @@
 			<anim id="0" />
 			<active value="true" />
 			<transform 
-				parent="Entity0"
-				position="-5.891266 0.966956 -0.796080"
-				rotation="90.000000 -0.000000 -90.000000"
-				scale="0.300000 0.300000 0.300000" />
+				parent="Entity3"
+				position="16.053833 5.500000 -7.000000"
+				rotation="94.083244 -0.000000 -90.000000"
+				scale="1.250000 1.250000 1.250000" />
 			<properties 
 				invisible="false"
 				shadow="false"
@@ -365,7 +383,7 @@
 			<active value="true" />
 			<transform 
 				position="-108.285217 -4407.669434 168.813904"
-				rotation="0.000000 0.000000 -180.000000"
+				rotation="0.000000 -0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -388,7 +406,7 @@
 			<active value="true" />
 			<transform 
 				position="3.899924 -4342.378418 168.813904"
-				rotation="0.000000 0.000000 -180.000000"
+				rotation="0.000000 -0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -411,7 +429,7 @@
 			<active value="true" />
 			<transform 
 				position="112.610535 -4407.669434 168.813904"
-				rotation="0.000000 0.000000 -180.000000"
+				rotation="0.000000 -0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -547,6 +565,20 @@
 			<properties 
 				invisible="false"
 				shadow="true"
+				occluder="false" />
+		</Entity>
+		<Entity name="Entity4" file="../meshs/emitter.mesh">
+			<BoundingBox min="-1.000000 -1.000001 -1.000000" max="1.000000 1.000000 1.000000" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				parent="Entity0"
+				position="-3.267090 0.403676 0.077919"
+				rotation="0.000000 0.000000 -90.000000"
+				scale="0.200000 0.200000 0.200000" />
+			<properties 
+				invisible="true"
+				shadow="false"
 				occluder="false" />
 		</Entity>
 		<Group name="Lights">

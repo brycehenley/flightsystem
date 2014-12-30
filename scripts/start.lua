@@ -1,5 +1,6 @@
 Main = getScene("Scene-1")
 Camera = getObject("Camera0")
+CameraC = getObject("Camera1")
 
 enableGui(1)
 mainCanvas = getMainCanvas()
@@ -11,6 +12,7 @@ keyboard = true
 -- get objects
 camera = getObject("Camera0")
 cambody = getObject("Entity3")
+cambodyC = getObject("Entity4")
 Lightspot1 = getObject("Lightspot1")
 Lightspot2 = getObject("Lightspot2")
 ship = getObject("Entity0")
@@ -129,6 +131,13 @@ function handleKeys()
 	-- clear notifications
 	if isKeyPressed("C") then
 		destroyWidget(button1)
+	end
+	if onKeyDown("L") then
+		if getCurrentCamera() == Camera then
+			changeCurrentCamera(CameraC) 
+		elseif getCurrentCamera() == CameraC then
+			changeCurrentCamera(Camera) 
+		end
 	end
 	if isKeyPressed("JOY1_BUTTON_B") then
 		destroyWidget(button1)

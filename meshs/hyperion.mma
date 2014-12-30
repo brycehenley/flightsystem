@@ -1,6 +1,6 @@
 <Maratis>
 
-<MaterialAnim num="3">
+<MaterialAnim num="2">
 
 	<Material id="0">
 		<opacity num="1">
@@ -20,23 +20,6 @@
 		</emitColor>
 	</Material>
 	<Material id="1">
-		<opacity num="1">
-			<k t="250" value="1.000000" />
-		</opacity>
-		<shininess num="1">
-			<k t="250" value="50.000000" />
-		</shininess>
-		<diffuseColor num="1">
-			<k t="250" x="0.132866" y="0.132866" z="0.132866" />
-		</diffuseColor>
-		<specularColor num="1">
-			<k t="250" x="0.500000" y="0.500000" z="0.500000" />
-		</specularColor>
-		<emitColor num="1">
-			<k t="250" x="0.000000" y="0.000000" z="0.000000" />
-		</emitColor>
-	</Material>
-	<Material id="2">
 		<opacity num="1">
 			<k t="250" value="1.000000" />
 		</opacity>

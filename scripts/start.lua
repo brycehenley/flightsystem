@@ -227,24 +227,22 @@ function onSceneUpdate()
 		end
 
 		rotate(ship, {1.0, 0.0, 0.0}, dl*1.25, "local")
-		rotate(cambody, {1.0, 0.0, 0.0}, dl*1.25, "local")
 
 		rotate(ship, {0.0, 0.0, -1.0}, dz*1.25, "local")
-		rotate(cambody, {0.0, 0.0, -1.0}, dz*1.25, "local")
 
 		rotate(ship, {0.0, -1.0, 0.0}, dw*1.25, "local")
-		rotate(cambody, {0.0, -1.0, 0.0}, dw*1.25, "local")
+
 	end
 
 		-------
-		-- rotate camera (X mouse)
-		rotate(cambody, {0.0, 0.0, -1.0}, dx*100.0, "local")
-		-- rotate camera (Y mouse)
-		rotate(cambody, {0.0, -1.0, 0.0}, dy*100.0, "local")
 		-- rotate Ship (X mouse)
 		rotate(ship, {0.0, 0.0, -1.0}, dx*100.0, "local")	
 		-- rotate Ship (Y mouse)
 		rotate(ship, {0.0, -1.0, 0.0}, dy*100.0, "local")	
+
+		-- rotate camera (Y mouse)
+		shipRot = getRotation(ship)
+		setRotation(cambody, {shipRot[1], shipRot[2], shipRot[3]})
 		
  
 	---- ambient forces

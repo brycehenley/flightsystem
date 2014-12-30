@@ -47,7 +47,7 @@
 			<transform 
 				parent="Lights"
 				position="-2069.545898 1660.014404 2000.000000"
-				rotation="5.000020 -50.000042 -37.000103"
+				rotation="5.000016 -50.000038 -37.000099"
 				scale="1.000000 1.000000 1.000000" />
 			<properties 
 				radius="20000.000000"
@@ -383,7 +383,7 @@
 			<active value="true" />
 			<transform 
 				position="-108.285217 -4407.669434 168.813904"
-				rotation="0.000000 -0.000000 -180.000000"
+				rotation="-0.000000 -0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -406,7 +406,7 @@
 			<active value="true" />
 			<transform 
 				position="3.899924 -4342.378418 168.813904"
-				rotation="0.000000 -0.000000 -180.000000"
+				rotation="-0.000000 -0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -429,7 +429,7 @@
 			<active value="true" />
 			<transform 
 				position="112.610535 -4407.669434 168.813904"
-				rotation="0.000000 -0.000000 -180.000000"
+				rotation="-0.000000 -0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"

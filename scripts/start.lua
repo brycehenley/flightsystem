@@ -70,16 +70,18 @@ Eship1collisionnumber = 0
 Eship2collisionnumber = 0
 Eship3collisionnumber = 0
 
+landed = false
+
 -- no global gravity, gravity is independent to each object.
 setGravity({0.0, 0.0, 0.0})
 
 --lighting quality
-setLightShadowQuality(Lightspot1, 2048)
-setLightShadowQuality(Lightspot2, 2048)
+-- setLightShadowQuality(Lightspot1, 2048)
+-- setLightShadowQuality(Lightspot2, 2048)
 
 --1337 shadows
--- setLightShadowQuality(Lightspot1, 4096*2)
--- setLightShadowQuality(Lightspot2, 4096*2)
+setLightShadowQuality(Lightspot1, 4096)
+setLightShadowQuality(Lightspot2, 4096)
 
 hideCursor()
 centerCursor()
@@ -124,9 +126,9 @@ function handleKeys()
 	if isKeyPressed("ESCAPE") then
 		menu()
 	end
-	--if isKeyPressed("SPACE") then
-	--	land()
-	--end
+	-- if isKeyPressed("SPACE") then
+	-- 	land()
+	-- end
 
 	-- clear notifications
 	if isKeyPressed("C") then
@@ -166,6 +168,17 @@ end
 
 	button1 = createButton(100,100,1000,0, "W to accelerate, S to brake, A&D to roll, Mouse for pitch and yaw;\n\n press tab or dpad-down to enable gamepad", "button1Callback")
 	addWidgetToCanvas(mainCanvas, button1)
+
+--landing and vert takeoff
+-- function land()
+-- 	if landed == false then
+-- 	shipcollision = false
+-- 		if isCollisionBetween(ship, landmass) ~= true then
+-- 			clearForces(ship)
+-- 			addCentralForce(ship, {0.0, 0.0, -500.0}, "local")
+-- 		end
+-- 	end
+-- end
 
 -- scene update
 function onSceneUpdate()

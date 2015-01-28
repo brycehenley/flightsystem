@@ -540,6 +540,16 @@
 				invisible="false"
 				shadow="true"
 				occluder="false" />
+			<physics 
+				shape="Box"
+				ghost="false"
+				mass="0.000000"
+				friction="0.500000"
+				restitution="0.000000"
+				linearDamping="0.010000"
+				angularDamping="0.010000"
+				angularFactor="1.000000"
+				linearFactor="1.000000 1.000000 1.000000" />
 		</Entity>
 		<Entity name="cliffbuildings1" file="../meshs/cliffbuildings1.mesh">
 			<BoundingBox min="-11.287144 4.504597 8.698426" max="-10.497755 5.020783 9.108258" />
@@ -553,6 +563,16 @@
 				invisible="false"
 				shadow="true"
 				occluder="false" />
+			<physics 
+				shape="Box"
+				ghost="false"
+				mass="0.000000"
+				friction="0.500000"
+				restitution="0.000000"
+				linearDamping="0.010000"
+				angularDamping="0.010000"
+				angularFactor="1.000000"
+				linearFactor="1.000000 1.000000 1.000000" />
 		</Entity>
 		<Entity name="AAplatforms" file="../meshs/AAplatforms.mesh">
 			<BoundingBox min="-11.577174 -2.958689 9.946507" max="-11.082155 5.322812 10.285569" />
@@ -621,6 +641,16 @@
 				invisible="false"
 				shadow="true"
 				occluder="false" />
+			<physics 
+				shape="Box"
+				ghost="false"
+				mass="0.000000"
+				friction="0.500000"
+				restitution="0.000000"
+				linearDamping="0.010000"
+				angularDamping="0.010000"
+				angularFactor="1.000000"
+				linearFactor="1.000000 1.000000 1.000000" />
 		</Entity>
 		<Entity name="path_tavernlevel" file="../meshs/path_tavernlevel.mesh">
 			<BoundingBox min="-9.552453 3.694606 5.561305" max="-7.263000 4.684014 5.591831" />
@@ -634,6 +664,16 @@
 				invisible="false"
 				shadow="true"
 				occluder="false" />
+			<physics 
+				shape="Box"
+				ghost="false"
+				mass="0.000000"
+				friction="0.500000"
+				restitution="0.000000"
+				linearDamping="0.010000"
+				angularDamping="0.010000"
+				angularFactor="1.000000"
+				linearFactor="1.000000 1.000000 1.000000" />
 		</Entity>
 		<Group name="Lights">
 			<active value="true" />

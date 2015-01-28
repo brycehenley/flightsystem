@@ -383,7 +383,7 @@
 			<active value="true" />
 			<transform 
 				position="-108.285217 -4407.669434 168.813904"
-				rotation="0.000000 0.000000 -180.000000"
+				rotation="0.000000 -0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -406,7 +406,7 @@
 			<active value="true" />
 			<transform 
 				position="3.899924 -4342.378418 168.813904"
-				rotation="0.000000 0.000000 -180.000000"
+				rotation="0.000000 -0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -429,7 +429,7 @@
 			<active value="true" />
 			<transform 
 				position="112.610535 -4407.669434 168.813904"
-				rotation="0.000000 0.000000 -180.000000"
+				rotation="0.000000 -0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -447,7 +447,7 @@
 				linearFactor="1.000000 1.000000 1.000000" />
 		</Entity>
 		<Entity name="obuilding" file="../meshs/obsbuilding.mesh">
-			<BoundingBox min="6.001088 6.434901 12.506319" max="8.801300 9.235113 14.484559" />
+			<BoundingBox min="6.001088 5.224294 12.506319" max="9.148739 9.235113 15.669143" />
 			<anim id="0" />
 			<active value="true" />
 			<transform 
@@ -555,7 +555,7 @@
 				occluder="false" />
 		</Entity>
 		<Entity name="AAplatforms" file="../meshs/AAplatforms.mesh">
-			<BoundingBox min="-10.168194 -2.634406 9.936352" max="-9.420444 5.443278 10.243468" />
+			<BoundingBox min="-11.577174 -2.958689 9.946507" max="-11.082155 5.322812 10.285569" />
 			<anim id="0" />
 			<active value="true" />
 			<transform 
@@ -616,6 +616,32 @@
 				rotation="0.000000 -0.000000 0.000000"
 				scale="1.000000 1.000000 1.000000" />
 		</Group>
+		<Entity name="tavern" file="../meshs/tavern_outside.mesh">
+			<BoundingBox min="-7.908301 3.743094 5.581161" max="-7.379782 4.477733 5.927321" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="15.462238 28.464582 -737.750122"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="79.999962 79.999962 79.999962" />
+			<properties 
+				invisible="false"
+				shadow="true"
+				occluder="false" />
+		</Entity>
+		<Entity name="path_tavernlevel" file="../meshs/path_tavernlevel.mesh">
+			<BoundingBox min="-9.552453 3.694606 5.561305" max="-7.263000 4.684014 5.591831" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="15.462240 28.464584 -737.750122"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="80.000000 80.000000 80.000000" />
+			<properties 
+				invisible="false"
+				shadow="true"
+				occluder="false" />
+		</Entity>
 
 	</Scene>
 

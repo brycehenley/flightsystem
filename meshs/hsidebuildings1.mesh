@@ -21,24 +21,24 @@
 	<SubMesh id="0">
 		<BoundingBox minx="-8.532095" miny="-2.430703" minz="8.083066" maxx="-8.171474" maxy="-1.670900" maxz="8.614343" />
 		<Vertices num="8">
-			<vertex x="-8.171474" y="-2.430703" z="8.614343" />
-			<vertex x="-8.171474" y="-1.670900" z="8.614343" />
 			<vertex x="-8.171474" y="-1.670900" z="8.083066" />
+			<vertex x="-8.171474" y="-1.670900" z="8.614343" />
+			<vertex x="-8.171474" y="-2.430703" z="8.614343" />
 			<vertex x="-8.171474" y="-2.430703" z="8.083066" />
-			<vertex x="-8.532095" y="-2.430703" z="8.083066" />
 			<vertex x="-8.532095" y="-2.430703" z="8.614343" />
-			<vertex x="-8.532095" y="-1.670900" z="8.083066" />
+			<vertex x="-8.532095" y="-2.430703" z="8.083066" />
 			<vertex x="-8.532095" y="-1.670900" z="8.614343" />
+			<vertex x="-8.532095" y="-1.670900" z="8.083066" />
 		</Vertices>
 		<Normals num="8">
-			<normal x="-0.577349" y="0.577349" z="-0.577349" />
-			<normal x="-0.577349" y="-0.577349" z="-0.577349" />
-			<normal x="-0.577349" y="-0.577349" z="0.577349" />
-			<normal x="-0.577349" y="0.577349" z="0.577349" />
-			<normal x="0.577349" y="0.577349" z="0.577349" />
 			<normal x="0.577349" y="0.577349" z="-0.577349" />
+			<normal x="0.577349" y="0.577349" z="0.577349" />
 			<normal x="0.577349" y="-0.577349" z="0.577349" />
 			<normal x="0.577349" y="-0.577349" z="-0.577349" />
+			<normal x="-0.577349" y="-0.577349" z="0.577349" />
+			<normal x="-0.577349" y="-0.577349" z="-0.577349" />
+			<normal x="-0.577349" y="0.577349" z="0.577349" />
+			<normal x="-0.577349" y="0.577349" z="-0.577349" />
 		</Normals>
 		<Indices num="36">
 			<index value="0" />
@@ -48,35 +48,35 @@
 			<index value="3" />
 			<index value="0" />
 			<index value="3" />
-			<index value="4" />
-			<index value="5" />
-			<index value="5" />
-			<index value="0" />
-			<index value="3" />
-			<index value="4" />
-			<index value="6" />
-			<index value="7" />
-			<index value="7" />
-			<index value="5" />
-			<index value="4" />
-			<index value="1" />
-			<index value="7" />
-			<index value="6" />
-			<index value="6" />
 			<index value="2" />
-			<index value="1" />
+			<index value="4" />
+			<index value="4" />
+			<index value="5" />
+			<index value="3" />
+			<index value="5" />
+			<index value="4" />
+			<index value="6" />
+			<index value="6" />
+			<index value="7" />
+			<index value="5" />
 			<index value="1" />
 			<index value="0" />
-			<index value="5" />
-			<index value="5" />
 			<index value="7" />
+			<index value="7" />
+			<index value="6" />
+			<index value="1" />
 			<index value="1" />
 			<index value="6" />
 			<index value="4" />
-			<index value="3" />
-			<index value="3" />
+			<index value="4" />
 			<index value="2" />
-			<index value="6" />
+			<index value="1" />
+			<index value="7" />
+			<index value="0" />
+			<index value="3" />
+			<index value="3" />
+			<index value="5" />
+			<index value="7" />
 		</Indices>
 		<Displays num="1">
 			<display primType="triangles" begin="0" size="36" material="0" cullFace="2" />
@@ -85,24 +85,24 @@
 	<SubMesh id="1">
 		<BoundingBox minx="-8.044109" miny="-2.390341" minz="8.083071" maxx="-7.683489" maxy="-1.630537" maxz="8.614347" />
 		<Vertices num="8">
-			<vertex x="-7.683489" y="-2.390341" z="8.614347" />
-			<vertex x="-7.683489" y="-1.630537" z="8.614347" />
 			<vertex x="-7.683489" y="-1.630537" z="8.083071" />
+			<vertex x="-7.683489" y="-1.630537" z="8.614347" />
+			<vertex x="-7.683489" y="-2.390341" z="8.614347" />
 			<vertex x="-7.683489" y="-2.390341" z="8.083071" />
-			<vertex x="-8.044109" y="-2.390341" z="8.083071" />
 			<vertex x="-8.044109" y="-2.390341" z="8.614347" />
-			<vertex x="-8.044109" y="-1.630537" z="8.083071" />
+			<vertex x="-8.044109" y="-2.390341" z="8.083071" />
 			<vertex x="-8.044109" y="-1.630537" z="8.614347" />
+			<vertex x="-8.044109" y="-1.630537" z="8.083071" />
 		</Vertices>
 		<Normals num="8">
-			<normal x="-0.577349" y="0.577349" z="-0.577349" />
-			<normal x="-0.577349" y="-0.577349" z="-0.577349" />
-			<normal x="-0.577349" y="-0.577349" z="0.577349" />
-			<normal x="-0.577349" y="0.577349" z="0.577349" />
-			<normal x="0.577349" y="0.577349" z="0.577349" />
 			<normal x="0.577349" y="0.577349" z="-0.577349" />
+			<normal x="0.577349" y="0.577349" z="0.577349" />
 			<normal x="0.577349" y="-0.577349" z="0.577349" />
 			<normal x="0.577349" y="-0.577349" z="-0.577349" />
+			<normal x="-0.577349" y="-0.577349" z="0.577349" />
+			<normal x="-0.577349" y="-0.577349" z="-0.577349" />
+			<normal x="-0.577349" y="0.577349" z="0.577349" />
+			<normal x="-0.577349" y="0.577349" z="-0.577349" />
 		</Normals>
 		<Indices num="36">
 			<index value="0" />
@@ -112,35 +112,35 @@
 			<index value="3" />
 			<index value="0" />
 			<index value="3" />
-			<index value="4" />
-			<index value="5" />
-			<index value="5" />
-			<index value="0" />
-			<index value="3" />
-			<index value="4" />
-			<index value="6" />
-			<index value="7" />
-			<index value="7" />
-			<index value="5" />
-			<index value="4" />
-			<index value="1" />
-			<index value="7" />
-			<index value="6" />
-			<index value="6" />
 			<index value="2" />
-			<index value="1" />
+			<index value="4" />
+			<index value="4" />
+			<index value="5" />
+			<index value="3" />
+			<index value="5" />
+			<index value="4" />
+			<index value="6" />
+			<index value="6" />
+			<index value="7" />
+			<index value="5" />
 			<index value="1" />
 			<index value="0" />
-			<index value="5" />
-			<index value="5" />
 			<index value="7" />
+			<index value="7" />
+			<index value="6" />
+			<index value="1" />
 			<index value="1" />
 			<index value="6" />
 			<index value="4" />
-			<index value="3" />
-			<index value="3" />
+			<index value="4" />
 			<index value="2" />
-			<index value="6" />
+			<index value="1" />
+			<index value="7" />
+			<index value="0" />
+			<index value="3" />
+			<index value="3" />
+			<index value="5" />
+			<index value="7" />
 		</Indices>
 		<Displays num="1">
 			<display primType="triangles" begin="0" size="36" material="0" cullFace="2" />

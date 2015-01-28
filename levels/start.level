@@ -383,7 +383,7 @@
 			<active value="true" />
 			<transform 
 				position="-108.285217 -4407.669434 168.813904"
-				rotation="0.000000 -0.000000 -180.000000"
+				rotation="-0.000000 -0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -406,7 +406,7 @@
 			<active value="true" />
 			<transform 
 				position="3.899924 -4342.378418 168.813904"
-				rotation="0.000000 -0.000000 -180.000000"
+				rotation="-0.000000 -0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -429,7 +429,7 @@
 			<active value="true" />
 			<transform 
 				position="112.610535 -4407.669434 168.813904"
-				rotation="0.000000 -0.000000 -180.000000"
+				rotation="-0.000000 -0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -609,13 +609,6 @@
 				shadow="false"
 				occluder="false" />
 		</Entity>
-		<Group name="Lights">
-			<active value="true" />
-			<transform 
-				position="0.000000 0.000000 0.000000"
-				rotation="0.000000 -0.000000 0.000000"
-				scale="1.000000 1.000000 1.000000" />
-		</Group>
 		<Entity name="tavern" file="../meshs/tavern_outside.mesh">
 			<BoundingBox min="-7.908301 3.743094 5.581161" max="-7.379782 4.477733 5.927321" />
 			<anim id="0" />
@@ -642,6 +635,13 @@
 				shadow="true"
 				occluder="false" />
 		</Entity>
+		<Group name="Lights">
+			<active value="true" />
+			<transform 
+				position="0.000000 0.000000 0.000000"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+		</Group>
 
 	</Scene>
 

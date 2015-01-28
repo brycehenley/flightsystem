@@ -30,25 +30,57 @@
 <SubMeshs num="2">
 	<SubMesh id="0">
 		<BoundingBox minx="-11.577174" miny="-2.958689" minz="10.194133" maxx="-11.140235" maxy="-2.575810" maxz="10.285569" />
-		<Vertices num="8">
-			<vertex x="-11.140235" y="-2.958689" z="10.285569" />
+		<Vertices num="24">
+			<vertex x="-11.140235" y="-2.575810" z="10.194133" />
 			<vertex x="-11.140235" y="-2.575810" z="10.285569" />
+			<vertex x="-11.140235" y="-2.958689" z="10.285569" />
+			<vertex x="-11.140235" y="-2.958689" z="10.194133" />
+			<vertex x="-11.140235" y="-2.958689" z="10.194133" />
+			<vertex x="-11.140235" y="-2.958689" z="10.285569" />
+			<vertex x="-11.577174" y="-2.958689" z="10.285569" />
+			<vertex x="-11.577174" y="-2.958689" z="10.194133" />
+			<vertex x="-11.577174" y="-2.958689" z="10.194133" />
+			<vertex x="-11.577174" y="-2.958689" z="10.285569" />
+			<vertex x="-11.577174" y="-2.575810" z="10.285569" />
+			<vertex x="-11.577174" y="-2.575810" z="10.194133" />
+			<vertex x="-11.577174" y="-2.575810" z="10.194133" />
+			<vertex x="-11.577174" y="-2.575810" z="10.285569" />
+			<vertex x="-11.140235" y="-2.575810" z="10.285569" />
+			<vertex x="-11.140235" y="-2.575810" z="10.194133" />
+			<vertex x="-11.140235" y="-2.575810" z="10.285569" />
+			<vertex x="-11.577174" y="-2.575810" z="10.285569" />
+			<vertex x="-11.577174" y="-2.958689" z="10.285569" />
+			<vertex x="-11.140235" y="-2.958689" z="10.285569" />
+			<vertex x="-11.577174" y="-2.575810" z="10.194133" />
 			<vertex x="-11.140235" y="-2.575810" z="10.194133" />
 			<vertex x="-11.140235" y="-2.958689" z="10.194133" />
 			<vertex x="-11.577174" y="-2.958689" z="10.194133" />
-			<vertex x="-11.577174" y="-2.958689" z="10.285569" />
-			<vertex x="-11.577174" y="-2.575810" z="10.194133" />
-			<vertex x="-11.577174" y="-2.575810" z="10.285569" />
 		</Vertices>
-		<Normals num="8">
-			<normal x="-0.577349" y="0.577349" z="-0.577349" />
-			<normal x="-0.577349" y="-0.577349" z="-0.577349" />
-			<normal x="-0.577349" y="-0.577349" z="0.577349" />
-			<normal x="-0.577349" y="0.577349" z="0.577349" />
-			<normal x="0.577349" y="0.577349" z="0.577349" />
-			<normal x="0.577349" y="0.577349" z="-0.577349" />
-			<normal x="0.577349" y="-0.577349" z="0.577349" />
-			<normal x="0.577349" y="-0.577349" z="-0.577349" />
+		<Normals num="24">
+			<normal x="1.000000" y="0.000000" z="0.000000" />
+			<normal x="1.000000" y="0.000000" z="0.000000" />
+			<normal x="1.000000" y="0.000000" z="0.000000" />
+			<normal x="1.000000" y="0.000000" z="0.000000" />
+			<normal x="0.000000" y="-1.000000" z="0.000000" />
+			<normal x="0.000000" y="-1.000000" z="0.000000" />
+			<normal x="0.000000" y="-1.000000" z="0.000000" />
+			<normal x="0.000000" y="-1.000000" z="0.000000" />
+			<normal x="-1.000000" y="0.000000" z="0.000000" />
+			<normal x="-1.000000" y="0.000000" z="0.000000" />
+			<normal x="-1.000000" y="0.000000" z="0.000000" />
+			<normal x="-1.000000" y="0.000000" z="0.000000" />
+			<normal x="0.000000" y="1.000000" z="0.000000" />
+			<normal x="0.000000" y="1.000000" z="0.000000" />
+			<normal x="0.000000" y="1.000000" z="0.000000" />
+			<normal x="0.000000" y="1.000000" z="0.000000" />
+			<normal x="0.000000" y="0.000000" z="1.000000" />
+			<normal x="0.000000" y="0.000000" z="1.000000" />
+			<normal x="0.000000" y="0.000000" z="1.000000" />
+			<normal x="0.000000" y="0.000000" z="1.000000" />
+			<normal x="0.000000" y="0.000000" z="-1.000000" />
+			<normal x="0.000000" y="0.000000" z="-1.000000" />
+			<normal x="0.000000" y="0.000000" z="-1.000000" />
+			<normal x="0.000000" y="0.000000" z="-1.000000" />
 		</Normals>
 		<Indices num="36">
 			<index value="0" />
@@ -57,36 +89,36 @@
 			<index value="2" />
 			<index value="3" />
 			<index value="0" />
-			<index value="3" />
 			<index value="4" />
 			<index value="5" />
-			<index value="5" />
-			<index value="0" />
-			<index value="3" />
+			<index value="6" />
+			<index value="6" />
+			<index value="7" />
 			<index value="4" />
-			<index value="6" />
-			<index value="7" />
-			<index value="7" />
-			<index value="5" />
-			<index value="4" />
-			<index value="1" />
-			<index value="7" />
-			<index value="6" />
-			<index value="6" />
-			<index value="2" />
-			<index value="1" />
-			<index value="1" />
-			<index value="0" />
-			<index value="5" />
-			<index value="5" />
-			<index value="7" />
-			<index value="1" />
-			<index value="6" />
-			<index value="4" />
-			<index value="3" />
-			<index value="3" />
-			<index value="2" />
-			<index value="6" />
+			<index value="8" />
+			<index value="9" />
+			<index value="10" />
+			<index value="10" />
+			<index value="11" />
+			<index value="8" />
+			<index value="12" />
+			<index value="13" />
+			<index value="14" />
+			<index value="14" />
+			<index value="15" />
+			<index value="12" />
+			<index value="16" />
+			<index value="17" />
+			<index value="18" />
+			<index value="18" />
+			<index value="19" />
+			<index value="16" />
+			<index value="20" />
+			<index value="21" />
+			<index value="22" />
+			<index value="22" />
+			<index value="23" />
+			<index value="20" />
 		</Indices>
 		<Displays num="1">
 			<display primType="triangles" begin="0" size="36" material="0" cullFace="2" />
@@ -94,25 +126,57 @@
 	</SubMesh>
 	<SubMesh id="1">
 		<BoundingBox minx="-11.474655" miny="4.978875" minz="9.946507" maxx="-11.082155" maxy="5.322812" maxz="10.028644" />
-		<Vertices num="8">
-			<vertex x="-11.082155" y="4.978875" z="10.028644" />
+		<Vertices num="24">
+			<vertex x="-11.082155" y="5.322812" z="9.946507" />
 			<vertex x="-11.082155" y="5.322812" z="10.028644" />
+			<vertex x="-11.082155" y="4.978875" z="10.028644" />
+			<vertex x="-11.082155" y="4.978875" z="9.946507" />
+			<vertex x="-11.082155" y="4.978875" z="9.946507" />
+			<vertex x="-11.082155" y="4.978875" z="10.028644" />
+			<vertex x="-11.474655" y="4.978875" z="10.028644" />
+			<vertex x="-11.474655" y="4.978875" z="9.946507" />
+			<vertex x="-11.474655" y="4.978875" z="9.946507" />
+			<vertex x="-11.474655" y="4.978875" z="10.028644" />
+			<vertex x="-11.474655" y="5.322812" z="10.028644" />
+			<vertex x="-11.474655" y="5.322812" z="9.946507" />
+			<vertex x="-11.474655" y="5.322812" z="9.946507" />
+			<vertex x="-11.474655" y="5.322812" z="10.028644" />
+			<vertex x="-11.082155" y="5.322812" z="10.028644" />
+			<vertex x="-11.082155" y="5.322812" z="9.946507" />
+			<vertex x="-11.082155" y="5.322812" z="10.028644" />
+			<vertex x="-11.474655" y="5.322812" z="10.028644" />
+			<vertex x="-11.474655" y="4.978875" z="10.028644" />
+			<vertex x="-11.082155" y="4.978875" z="10.028644" />
+			<vertex x="-11.474655" y="5.322812" z="9.946507" />
 			<vertex x="-11.082155" y="5.322812" z="9.946507" />
 			<vertex x="-11.082155" y="4.978875" z="9.946507" />
 			<vertex x="-11.474655" y="4.978875" z="9.946507" />
-			<vertex x="-11.474655" y="4.978875" z="10.028644" />
-			<vertex x="-11.474655" y="5.322812" z="9.946507" />
-			<vertex x="-11.474655" y="5.322812" z="10.028644" />
 		</Vertices>
-		<Normals num="8">
-			<normal x="-0.577349" y="0.577349" z="-0.577349" />
-			<normal x="-0.577349" y="-0.577349" z="-0.577349" />
-			<normal x="-0.577349" y="-0.577349" z="0.577349" />
-			<normal x="-0.577349" y="0.577349" z="0.577349" />
-			<normal x="0.577349" y="0.577349" z="0.577349" />
-			<normal x="0.577349" y="0.577349" z="-0.577349" />
-			<normal x="0.577349" y="-0.577349" z="0.577349" />
-			<normal x="0.577349" y="-0.577349" z="-0.577349" />
+		<Normals num="24">
+			<normal x="1.000000" y="0.000000" z="0.000000" />
+			<normal x="1.000000" y="0.000000" z="0.000000" />
+			<normal x="1.000000" y="0.000000" z="0.000000" />
+			<normal x="1.000000" y="0.000000" z="0.000000" />
+			<normal x="0.000000" y="-1.000000" z="0.000000" />
+			<normal x="0.000000" y="-1.000000" z="0.000000" />
+			<normal x="0.000000" y="-1.000000" z="0.000000" />
+			<normal x="0.000000" y="-1.000000" z="0.000000" />
+			<normal x="-1.000000" y="0.000000" z="0.000000" />
+			<normal x="-1.000000" y="0.000000" z="0.000000" />
+			<normal x="-1.000000" y="0.000000" z="0.000000" />
+			<normal x="-1.000000" y="0.000000" z="0.000000" />
+			<normal x="0.000000" y="1.000000" z="0.000000" />
+			<normal x="0.000000" y="1.000000" z="0.000000" />
+			<normal x="0.000000" y="1.000000" z="0.000000" />
+			<normal x="0.000000" y="1.000000" z="0.000000" />
+			<normal x="0.000000" y="0.000000" z="1.000000" />
+			<normal x="0.000000" y="0.000000" z="1.000000" />
+			<normal x="0.000000" y="0.000000" z="1.000000" />
+			<normal x="0.000000" y="0.000000" z="1.000000" />
+			<normal x="0.000000" y="0.000000" z="-1.000000" />
+			<normal x="0.000000" y="0.000000" z="-1.000000" />
+			<normal x="0.000000" y="0.000000" z="-1.000000" />
+			<normal x="0.000000" y="0.000000" z="-1.000000" />
 		</Normals>
 		<Indices num="36">
 			<index value="0" />
@@ -121,36 +185,36 @@
 			<index value="2" />
 			<index value="3" />
 			<index value="0" />
-			<index value="3" />
 			<index value="4" />
 			<index value="5" />
-			<index value="5" />
-			<index value="0" />
-			<index value="3" />
+			<index value="6" />
+			<index value="6" />
+			<index value="7" />
 			<index value="4" />
-			<index value="6" />
-			<index value="7" />
-			<index value="7" />
-			<index value="5" />
-			<index value="4" />
-			<index value="1" />
-			<index value="7" />
-			<index value="6" />
-			<index value="6" />
-			<index value="2" />
-			<index value="1" />
-			<index value="1" />
-			<index value="0" />
-			<index value="5" />
-			<index value="5" />
-			<index value="7" />
-			<index value="1" />
-			<index value="6" />
-			<index value="4" />
-			<index value="3" />
-			<index value="3" />
-			<index value="2" />
-			<index value="6" />
+			<index value="8" />
+			<index value="9" />
+			<index value="10" />
+			<index value="10" />
+			<index value="11" />
+			<index value="8" />
+			<index value="12" />
+			<index value="13" />
+			<index value="14" />
+			<index value="14" />
+			<index value="15" />
+			<index value="12" />
+			<index value="16" />
+			<index value="17" />
+			<index value="18" />
+			<index value="18" />
+			<index value="19" />
+			<index value="16" />
+			<index value="20" />
+			<index value="21" />
+			<index value="22" />
+			<index value="22" />
+			<index value="23" />
+			<index value="20" />
 		</Indices>
 		<Displays num="1">
 			<display primType="triangles" begin="0" size="36" material="1" cullFace="2" />

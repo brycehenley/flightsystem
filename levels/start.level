@@ -383,7 +383,7 @@
 			<active value="true" />
 			<transform 
 				position="-108.285217 -4407.669434 168.813904"
-				rotation="-0.000000 -0.000000 -180.000000"
+				rotation="0.000000 0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -406,7 +406,7 @@
 			<active value="true" />
 			<transform 
 				position="3.899924 -4342.378418 168.813904"
-				rotation="-0.000000 -0.000000 -180.000000"
+				rotation="0.000000 0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -429,7 +429,7 @@
 			<active value="true" />
 			<transform 
 				position="112.610535 -4407.669434 168.813904"
-				rotation="-0.000000 -0.000000 -180.000000"
+				rotation="0.000000 0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -675,13 +675,6 @@
 				angularFactor="1.000000"
 				linearFactor="1.000000 1.000000 1.000000" />
 		</Entity>
-		<Group name="Lights">
-			<active value="true" />
-			<transform 
-				position="0.000000 0.000000 0.000000"
-				rotation="0.000000 -0.000000 0.000000"
-				scale="1.000000 1.000000 1.000000" />
-		</Group>
 		<Entity name="hsidebuildings1" file="../meshs/hsidebuildings1.mesh">
 			<BoundingBox min="-8.532095 -2.430703 8.083066" max="-7.683489 -1.630537 8.614347" />
 			<anim id="0" />
@@ -866,6 +859,13 @@
 				angularFactor="1.000000"
 				linearFactor="1.000000 1.000000 1.000000" />
 		</Entity>
+		<Group name="Lights">
+			<active value="true" />
+			<transform 
+				position="0.000000 0.000000 0.000000"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+		</Group>
 
 	</Scene>
 

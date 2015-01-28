@@ -1,0 +1,89 @@
+<Maratis>
+
+<Mesh>
+
+<Materials num="1">
+	<Material id="0" type="1">
+		<blend type="0" />
+		<opacity value="1.000000" />
+		<shininess value="50.000000" />
+		<customValue value="0.000000" />
+		<diffuseColor r="0.800000" g="0.800000" b="0.800000" />
+		<specularColor r="0.500000" g="0.500000" b="0.500000" />
+		<emitColor r="0.000000" g="0.000000" b="0.000000" />
+		<customColor r="0.000000" g="0.000000" b="0.000000" />
+	</Material>
+</Materials>
+
+<BoundingBox minx="-9.447948" miny="4.423192" minz="5.563335" maxx="-9.259991" maxy="4.656273" maxz="5.697480" />
+
+<SubMeshs num="1">
+	<SubMesh id="0">
+		<BoundingBox minx="-9.447948" miny="4.423192" minz="5.563335" maxx="-9.259991" maxy="4.656273" maxz="5.697480" />
+		<Vertices num="8">
+			<vertex x="-9.259991" y="4.423192" z="5.697480" />
+			<vertex x="-9.259991" y="4.656273" z="5.697480" />
+			<vertex x="-9.259991" y="4.656273" z="5.563335" />
+			<vertex x="-9.259991" y="4.423192" z="5.563335" />
+			<vertex x="-9.447948" y="4.423192" z="5.563335" />
+			<vertex x="-9.447948" y="4.423192" z="5.697480" />
+			<vertex x="-9.447948" y="4.656273" z="5.563335" />
+			<vertex x="-9.447948" y="4.656273" z="5.697480" />
+		</Vertices>
+		<Normals num="8">
+			<normal x="-0.577349" y="0.577349" z="-0.577349" />
+			<normal x="-0.577349" y="-0.577349" z="-0.577349" />
+			<normal x="-0.577349" y="-0.577349" z="0.577349" />
+			<normal x="-0.577349" y="0.577349" z="0.577349" />
+			<normal x="0.577349" y="0.577349" z="0.577349" />
+			<normal x="0.577349" y="0.577349" z="-0.577349" />
+			<normal x="0.577349" y="-0.577349" z="0.577349" />
+			<normal x="0.577349" y="-0.577349" z="-0.577349" />
+		</Normals>
+		<Indices num="36">
+			<index value="0" />
+			<index value="1" />
+			<index value="2" />
+			<index value="2" />
+			<index value="3" />
+			<index value="0" />
+			<index value="3" />
+			<index value="4" />
+			<index value="5" />
+			<index value="5" />
+			<index value="0" />
+			<index value="3" />
+			<index value="4" />
+			<index value="6" />
+			<index value="7" />
+			<index value="7" />
+			<index value="5" />
+			<index value="4" />
+			<index value="1" />
+			<index value="7" />
+			<index value="6" />
+			<index value="6" />
+			<index value="2" />
+			<index value="1" />
+			<index value="1" />
+			<index value="0" />
+			<index value="5" />
+			<index value="5" />
+			<index value="7" />
+			<index value="1" />
+			<index value="6" />
+			<index value="4" />
+			<index value="3" />
+			<index value="3" />
+			<index value="2" />
+			<index value="6" />
+		</Indices>
+		<Displays num="1">
+			<display primType="triangles" begin="0" size="36" material="0" cullFace="2" />
+		</Displays>
+	</SubMesh>
+</SubMeshs>
+
+</Mesh>
+
+</Maratis>

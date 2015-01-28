@@ -741,6 +741,71 @@
 				shadow="true"
 				occluder="false" />
 		</Entity>
+		<Entity name="elevatorpad_tavern" file="../meshs/elevatorpad_tavernlevel.mesh">
+			<BoundingBox min="-9.447948 4.423192 5.563335" max="-9.259991 4.656273 5.697480" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="15.462240 28.464584 -737.750122"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="80.000000 80.000000 80.000000" />
+			<properties 
+				invisible="false"
+				shadow="true"
+				occluder="false" />
+		</Entity>
+		<Entity name="g_buildings1" file="../meshs/groundbuildings1.mesh">
+			<BoundingBox min="-8.825784 5.852438 9.876473" max="-8.389825 6.288396 10.469607" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="15.462240 28.464584 -737.750122"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="80.000000 80.000000 80.000000" />
+			<properties 
+				invisible="false"
+				shadow="true"
+				occluder="false" />
+		</Entity>
+		<Entity name="g_buildings2" file="../meshs/groundbuildings2.mesh">
+			<BoundingBox min="-5.307640 4.085181 9.482903" max="-4.824741 4.638520 9.911137" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="15.462240 28.464584 -737.750122"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="80.000000 80.000000 80.000000" />
+			<properties 
+				invisible="false"
+				shadow="true"
+				occluder="false" />
+		</Entity>
+		<Entity name="g_buildings3" file="../meshs/groundbuildings3.mesh">
+			<BoundingBox min="-9.863509 5.626042 9.987981" max="-9.733336 5.788499 10.133586" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="15.462240 28.464584 -737.750122"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="80.000000 80.000000 80.000000" />
+			<properties 
+				invisible="false"
+				shadow="true"
+				occluder="false" />
+		</Entity>
+		<Entity name="g_buildings4" file="../meshs/groundbuildings4.mesh">
+			<BoundingBox min="-5.341561 2.589768 9.714182" max="-5.156971 2.817221 9.913435" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="15.462240 28.464584 -737.750122"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="80.000000 80.000000 80.000000" />
+			<properties 
+				invisible="false"
+				shadow="true"
+				occluder="false" />
+		</Entity>
 
 	</Scene>
 

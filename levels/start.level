@@ -447,7 +447,7 @@
 				linearFactor="1.000000 1.000000 1.000000" />
 		</Entity>
 		<Entity name="obuilding" file="../meshs/obsbuilding.mesh">
-			<BoundingBox min="6.001088 5.224294 12.506319" max="9.148739 9.235113 15.669143" />
+			<BoundingBox min="6.001088 6.434901 12.506319" max="8.801300 9.235113 14.484559" />
 			<anim id="0" />
 			<active value="true" />
 			<transform 
@@ -470,7 +470,7 @@
 				linearFactor="1.000000 1.000000 1.000000" />
 		</Entity>
 		<Entity name="dome" file="../meshs/dome.mesh">
-			<BoundingBox min="7.172683 5.252728 12.645129" max="9.148739 7.228784 15.669143" />
+			<BoundingBox min="7.172683 5.224294 12.645129" max="9.148739 7.228784 15.669143" />
 			<anim id="0" />
 			<active value="true" />
 			<transform 
@@ -552,7 +552,7 @@
 				linearFactor="1.000000 1.000000 1.000000" />
 		</Entity>
 		<Entity name="cliffbuildings1" file="../meshs/cliffbuildings1.mesh">
-			<BoundingBox min="-11.287144 4.504597 8.698426" max="-10.497755 5.020783 9.108258" />
+			<BoundingBox min="-10.766129 4.567549 9.037498" max="-10.587994 4.789865 9.236752" />
 			<anim id="0" />
 			<active value="true" />
 			<transform 
@@ -682,6 +682,65 @@
 				rotation="0.000000 -0.000000 0.000000"
 				scale="1.000000 1.000000 1.000000" />
 		</Group>
+		<Entity name="hsidebuildings1" file="../meshs/hsidebuildings1.mesh">
+			<BoundingBox min="-8.532095 -2.430703 8.083066" max="-7.683489 -1.630537 8.614347" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="15.462240 28.464584 -737.750122"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="80.000000 80.000000 80.000000" />
+			<properties 
+				invisible="false"
+				shadow="true"
+				occluder="false" />
+			<physics 
+				shape="Box"
+				ghost="false"
+				mass="0.000000"
+				friction="0.500000"
+				restitution="0.000000"
+				linearDamping="0.010000"
+				angularDamping="0.010000"
+				angularFactor="1.000000"
+				linearFactor="1.000000 1.000000 1.000000" />
+		</Entity>
+		<Entity name="ub_buildings1" file="../meshs/ub_buildings1.mesh">
+			<BoundingBox min="-7.607644 1.554980 2.728025" max="-3.450487 5.386599 3.693695" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="15.462240 28.464584 -737.750122"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="80.000000 80.000000 80.000000" />
+			<properties 
+				invisible="false"
+				shadow="true"
+				occluder="false" />
+			<physics 
+				shape="Box"
+				ghost="false"
+				mass="0.000000"
+				friction="0.500000"
+				restitution="0.000000"
+				linearDamping="0.010000"
+				angularDamping="0.010000"
+				angularFactor="1.000000"
+				linearFactor="1.000000 1.000000 1.000000" />
+		</Entity>
+		<Entity name="path_elevatorlevel2" file="../meshs/path_elevatorlevel2.mesh">
+			<BoundingBox min="-10.502046 4.505744 8.958041" max="-9.197831 4.666423 8.958041" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				position="15.462240 28.464584 -737.750122"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="80.000000 80.000000 80.000000" />
+			<properties 
+				invisible="false"
+				shadow="true"
+				occluder="false" />
+		</Entity>
 
 	</Scene>
 

@@ -1,6 +1,9 @@
+dofile("SDK/Neo3D.lua")
+dofile("SDK/Graphics2D.lua")
+
 menuheadertext = getObject("Text0")
-background = getObject("Entity1")
-logo = getObject("Entity0")
+background = Object3d.getObject("Entity1")
+logo = Object3d.getObject("Entity0")
 titlemusic = getObject("titlemusic")
 
 button = false
@@ -103,7 +106,7 @@ end
 function onSceneUpdate()
 	showCursor()
 
-	rotate(logo, {0, 0, 1}, .5, "local")
+	logo:rotate({0, 0, 1}, .5, "local")
 
 	if isKeyPressed("SPACE") then
 		button1Callback()

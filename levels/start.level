@@ -777,7 +777,7 @@
 				scale="80.000000 80.000000 80.000000" />
 			<properties 
 				invisible="false"
-				shadow="false"
+				shadow="true"
 				occluder="false" />
 			<physics 
 				shape="TriangleMesh"
@@ -800,7 +800,7 @@
 				scale="80.000000 80.000000 80.000000" />
 			<properties 
 				invisible="false"
-				shadow="false"
+				shadow="true"
 				occluder="false" />
 			<physics 
 				shape="TriangleMesh"
@@ -849,7 +849,7 @@
 				shadow="true"
 				occluder="false" />
 			<physics 
-				shape="Box"
+				shape="TriangleMesh"
 				ghost="false"
 				mass="0.000000"
 				friction="0.500000"

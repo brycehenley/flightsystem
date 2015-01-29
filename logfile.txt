@@ -3,4 +3,6 @@ Log tracked at level :6
 [ Info ] Renderer: 4.4.0 NVIDIA 340.29 in StandardRenderer in StandardRenderer.cpp
 [ Info ] Renderer: 4.4.0 NVIDIA 340.29 in StandardRenderer in StandardRenderer.cpp
 [ Error ] Load Vorbis : input does not appear to be an ogg vorbis bitstream in M_loadVorbisSound in VorbisLoader.cpp
+[ Warn ] TiXmlDocument load failed : Error reading end tag. line 86 in xmlMeshLoad in MeshLoad.cpp
+[ Warn ] Cannot load data /home/bryce/Skyland/flightsystem/meshs/hsidebuildings1.mesh in update in MeshRef.cpp
 [ Info ] Update thread returned with exit code 0 in main in main.cpp

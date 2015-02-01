@@ -59,6 +59,8 @@ dy = 0.0 -- change in mouse y-axis since last update
 dz = 0.0
 dw = 0.0
 
+Rollmulti = 1.0 --the on key hold multiplyer for rolling the ship
+
 tick = 0
 sec = 0
 min = 0
@@ -76,12 +78,12 @@ landed = false
 setGravity({0.0, 0.0, 0.0})
 
 --lighting quality
--- setLightShadowQuality(Lightspot1, 2048)
--- setLightShadowQuality(Lightspot2, 2048)
+setLightShadowQuality(Lightspot1, 2048)
+setLightShadowQuality(Lightspot2, 2048)
 
 --1337 shadows
-setLightShadowQuality(Lightspot1, 4096)
-setLightShadowQuality(Lightspot2, 4096)
+-- setLightShadowQuality(Lightspot1, 4096)
+-- setLightShadowQuality(Lightspot2, 4096)
 
 hideCursor()
 centerCursor()
@@ -108,12 +110,29 @@ function handleKeys()
 		addCentralForce(ship, {0.0, 0.0, 100.0}, "local")
 	end
 	if isKeyPressed("A") then
-		rotate(ship, {-1.0, 0.0, 0.0}, 0.75, "local") 
-		rotate(cambody, {-1.0, 0.0, 0.0}, 0.75, "local") 
+		rotate(ship, {-1.0, 0.0, 0.0}, 0.75*Rollmulti , "local") 
+		rotate(cambody, {-1.0, 0.0, 0.0}, 0.75*Rollmulti , "local")
+
+		if onKeyDown("A") then
+			if Rollmulti <= 3.0 then
+				Rollmulti = Rollmulti + 0.1
+			end
+		end
 	end
 	if isKeyPressed("D") then
-		rotate(ship, {1.0, 0.0, 0.0}, 0.75, "local")
-		rotate(cambody, {1.0, 0.0, 0.0}, 0.75, "local")
+		rotate(ship, {1.0, 0.0, 0.0}, 0.75*Rollmulti, "local")
+		rotate(cambody, {1.0, 0.0, 0.0}, 0.75*Rollmulti, "local")
+		if onKeyDown("D") then
+			if Rollmulti <= 3.0 then
+				Rollmulti = Rollmulti + 0.1
+			end
+		end
+	end
+	if onKeyUp("A") then
+		Rollmulti = 1.0
+	end
+	if onKeyUp("D") then
+		Rollmulti = 1.0
 	end
 	
 	if isKeyPressed("S") then

@@ -72,7 +72,9 @@ Eship1collisionnumber = 0
 Eship2collisionnumber = 0
 Eship3collisionnumber = 0
 
+flight = true
 landed = false
+thirdperson = false
 
 -- no global gravity, gravity is independent to each object.
 setGravity({0.0, 0.0, 0.0})
@@ -104,7 +106,7 @@ function gameover()
 	loadLevel("levels/gameover.level")
 end
 
-function handleKeys()
+function handleKeysflight()
 	if isKeyPressed("W") then
 		addCentralForce(ship, {700.0, 0.0, 0.0}, "local")
 		addCentralForce(ship, {0.0, 0.0, 100.0}, "local")
@@ -145,9 +147,16 @@ function handleKeys()
 	if isKeyPressed("ESCAPE") then
 		menu()
 	end
-	-- if isKeyPressed("SPACE") then
-	-- 	land()
-	-- end
+	if isKeyPressed("SPACE") then
+		guideposstart = getPosition(guide0)
+		guideposend = getPosition(guide1)
+
+		pointland, objectland = rayHit(guideposstart, guideposend)
+
+		-- if 
+		-- land()
+
+	end
 
 	-- clear notifications
 	if isKeyPressed("C") then
@@ -206,7 +215,7 @@ function onSceneUpdate()
 	sec = tick/1000
 	min = sec/60
 
-	--Ship crash handeling
+	--Ship crash handling
 	if shipcollision then
 
 			if isCollisionBetween(ship, landmass) then
@@ -288,9 +297,10 @@ function onSceneUpdate()
 		addCentralForce(Eship2, {0.0, -300.0, 0.0}, "local")
 
 
+	if flight == true then
+		handleKeysflight()
+	end
 
-	handleKeys()
-	
 	dx = getAxis("MOUSE_X") - mx 
 	dy = getAxis("MOUSE_Y") - my 
 

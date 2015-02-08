@@ -383,7 +383,7 @@
 			<active value="true" />
 			<transform 
 				position="-108.285217 -4407.669434 168.813904"
-				rotation="0.000000 0.000000 -180.000000"
+				rotation="0.000000 -0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -406,7 +406,7 @@
 			<active value="true" />
 			<transform 
 				position="3.899924 -4342.378418 168.813904"
-				rotation="0.000000 0.000000 -180.000000"
+				rotation="0.000000 -0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -429,7 +429,7 @@
 			<active value="true" />
 			<transform 
 				position="112.610535 -4407.669434 168.813904"
-				rotation="0.000000 0.000000 -180.000000"
+				rotation="0.000000 -0.000000 -180.000000"
 				scale="10.000000 10.000000 10.000000" />
 			<properties 
 				invisible="false"
@@ -865,7 +865,21 @@
 			<active value="true" />
 			<transform 
 				parent="Entity0"
-				position="0.000000 0.000000 -1.100000"
+				position="0.000000 0.000000 -1.000000"
+				rotation="0.000000 -0.000000 0.000000"
+				scale="1.000000 1.000000 1.000000" />
+			<properties 
+				invisible="true"
+				shadow="true"
+				occluder="false" />
+		</Entity>
+		<Entity name="guide1" file="../meshs/box.mesh">
+			<BoundingBox min="-0.035165 -0.035165 -0.000431" max="0.035165 0.035165 0.069900" />
+			<anim id="0" />
+			<active value="true" />
+			<transform 
+				parent="Entity0"
+				position="0.000000 0.000000 -100.000000"
 				rotation="0.000000 -0.000000 0.000000"
 				scale="1.000000 1.000000 1.000000" />
 			<properties 
@@ -880,20 +894,6 @@
 				rotation="0.000000 -0.000000 0.000000"
 				scale="1.000000 1.000000 1.000000" />
 		</Group>
-		<Entity name="guide1" file="../meshs/box.mesh">
-			<BoundingBox min="-0.035165 -0.035165 -0.000431" max="0.035165 0.035165 0.069900" />
-			<anim id="0" />
-			<active value="true" />
-			<transform 
-				parent="Entity0"
-				position="0.000000 0.000000 -1.600000"
-				rotation="0.000000 -0.000000 0.000000"
-				scale="1.000000 1.000000 1.000000" />
-			<properties 
-				invisible="true"
-				shadow="true"
-				occluder="false" />
-		</Entity>
 
 	</Scene>
 

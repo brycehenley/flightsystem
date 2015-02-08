@@ -148,13 +148,11 @@ function handleKeysflight()
 		menu()
 	end
 	if isKeyPressed("SPACE") then
-		guideposstart = getPosition(guide0)
-		guideposend = getPosition(guide1)
+		point3, object3 = rayHit(guideposstart, guideposend)
 
-		pointland, objectland = rayHit(guideposstart, guideposend)
-
-		-- if 
-		-- land()
+		if getName(object3) == "landmass" then
+		    land()
+		end
 
 	end
 
@@ -197,16 +195,13 @@ end
 	button1 = createButton(100,100,1000,0, "W to accelerate, S to brake, A&D to roll, Mouse for pitch and yaw;\n\n press tab or dpad-down to enable gamepad", "button1Callback")
 	addWidgetToCanvas(mainCanvas, button1)
 
---landing and vert takeoff
--- function land()
--- 	if landed == false then
--- 	shipcollision = false
--- 		if isCollisionBetween(ship, landmass) ~= true then
--- 			clearForces(ship)
--- 			addCentralForce(ship, {0.0, 0.0, -500.0}, "local")
--- 		end
--- 	end
--- end
+--landing
+function land()
+	shipcollision = false
+		
+		-- addCentralForce(ship, {0.0, 0.0, -500.0}, "local")
+
+end
 
 -- scene update
 function onSceneUpdate()
@@ -214,6 +209,10 @@ function onSceneUpdate()
 	tick = getSystemTick()
 	sec = tick/1000
 	min = sec/60
+
+	--landing hitscan
+	guideposstart = getPosition(guide0)
+	guideposend = getPosition(guide1)
 
 	--Ship crash handling
 	if shipcollision then

@@ -3,7 +3,7 @@
 <Project>
 
 	<renderer name="StandardRenderer" />
-	<start file="levels/start.level" />
+	<start file="levels/titlescreen.level" />
 
 </Project>
 
